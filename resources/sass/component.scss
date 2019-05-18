@@ -189,7 +189,7 @@
 
 		.nav-link{
 
-			img{
+			svg{
 				margin-right: 10px;
 			}
 		}
@@ -198,6 +198,13 @@
 	.nav-item.active{
 		border-left: 5px solid var(--purple);
 		background: var(--dark-blue-a);
+
+		svg{
+
+			path{
+				fill: #9290E2;
+			}
+		}
 	}
 }
 
