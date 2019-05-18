@@ -1,0 +1,173 @@
+@import "_plugins/variabel";
+
+//font setup
+@font-face{
+	font-family: SourceSansPro-Regular;
+	src:url("../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face{
+	font-family: SourceSansPro-Bold;
+	src:url("../fonts/SourceSansPro-Bold.otf");
+}
+
+
+
+//end font setup
+
+//root
+:root{
+	--white:#fff;
+	--light-red:#ff6565;
+	--blue:#3b86ff;
+	--purple:#A3A0FB;
+	--dark-blue:#43425D;
+	--dark-white:#F0F0F7;
+	--dark-blue-a:#3B3B53;
+}
+
+//end root
+
+//font style
+@for $i from 10 through 40 {
+  .f-#{$i} {
+    font-size: #{$i}px !important;
+  }
+}
+
+.f-bold{
+	font-family: SourceSansPro-Bold;
+}
+
+.f-regular{
+	font-family: SourceSansPro-Regular;
+}
+//end font style
+
+
+//style
+.v-line{
+	display: block;
+	height: 23px;
+	margin-top: 9px;
+	width: 1px;
+	background: #e6e6e6;
+}
+
+.clearfix{
+	clear: both;
+}
+
+.bg-semidarkblue{
+	background: var(--dark-blue-a) !important;
+}
+
+.bg-darkblue{
+	background: var(--dark-blue) !important;
+}
+
+.bg-darkwhite{
+	background: var(--dark-white) !important;
+}
+
+.bg-white{
+	background: var(--white) !important;
+}
+
+//end style
+
+//navbar
+
+.navbar{
+	box-sizing: border-box;
+	.search-wrapper{
+
+		input[type="text"]{
+			border: none !important;
+			outline: none !important;
+			@include padding-x(50px);
+		}
+
+		&:before{
+			content: "";
+			position: absolute;
+			background: url("../images/icons/icon_search.svg");
+			width: 16px;
+			height: 16px;
+			left: 30px;
+			top: 12px;
+		}
+	}
+
+	.navbar-nav{
+		flex-direction: unset;
+
+		box-sizing: border-box !important;
+		
+	
+
+		.nav-item{
+			box-sizing: border-box;
+			@include padding-x(10px);
+
+			.nav-link{
+				box-sizing: border-box;
+
+			}
+
+			&:nth-child(3){
+				margin-top: -3px;
+				
+
+			}
+		}
+	}
+
+	.user-name{
+		display: inline-block;
+		margin-top: 8px;
+		margin-left: 5px;
+		cursor: pointer;
+	}
+
+	.avatar{
+			width: 30px;
+			margin-top: 4px;
+			cursor: pointer;
+		}
+}
+
+///end navbar
+
+//sidebar
+.nav-link{
+	padding-left: 0 !important;
+}
+
+.sidebar-sticky{
+	margin-top: 40px;
+
+	.nav-item{
+		@include padding-y(12.7px);
+		padding-left: 20px;
+
+
+		.nav-link{
+
+			img{
+				margin-right: 10px;
+			}
+		}
+	}
+
+	.nav-item.active{
+		border-left: 5px solid var(--purple);
+		background: var(--dark-blue-a);
+	}
+}
+
+.sidebar{
+	padding-left: 0 !important;
+	padding-right: 0 !important;
+}
+//end sidebar

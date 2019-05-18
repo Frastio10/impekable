@@ -1,0 +1,72 @@
+/**
+** this for first setup
+**/
+@import 'function';
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face  {
+  font-family: opensans-light;
+  src:url(../fonts/OpenSans-Light.ttf);
+}
+@font-face  {
+  font-family: opensans;
+  src:url(../fonts/OpenSans-Regular.ttf);
+}
+@font-face  {
+  font-family: opensans-italic;
+  src:url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face  {
+  font-family: opensans-semibold;
+  src:url(../fonts/OpenSans-SemiBold.ttf);
+}
+@font-face  {
+  font-family: opensans-bold;
+  src:url(../fonts/OpenSans-Bold.ttf);
+} 
+
+/**
+** poppins 
+**/
+@font-face  {
+  font-family: Volkhov-Bold;
+  src:url(../fonts/Volkhov-Bold.ttf);
+}
+@font-face  {
+  font-family: Volkhov-BoldItalic;
+  src:url(../fonts/Volkhov-BoldItalic.ttf);
+}
+@font-face  {
+  font-family: Volkhov-Italic;
+  src:url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face  {
+  font-family: Volkhov-Regular;
+  src:url(../fonts/Volkhov-Regular.ttf);
+}
+/**
+** this for setup variable
+**/
+
+$colors: (
+  "primary"      : #C18951,
+  "white"        : #fff,
+  "secondary"    : #F6F6F6,
+  "transparent"  : rgba(0,0,0,0),
+  "grey"         : #ECECEC,
+  "white-dark"   : #999999,
+  "white-grey"   : #FBFBFB,
+  "dark"         : #555555,
+  "black"        : #000,
+  "darken"       : #333, 
+  "dark-c"       :#9A6836,
+  "white-footer" :#D9D9D9,
+  "fail"         :#FA3E3E,
+);

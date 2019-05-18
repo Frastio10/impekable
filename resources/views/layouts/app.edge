@@ -1,0 +1,252 @@
+<!DOCTYPE html>
+<html lang="en"><head>
+	<title>{{env.APP_NAME}}</title>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IE=edge">
+	<meta name="viewport" content="width=device-width , initial-scale=1.0">
+	<meta name="description" content="{{env.APP_DESCRIPTION}}">
+	<meta name="keywords" content="{{env.APP_KEYWORD}}">
+	<meta name="author" content="">
+	<link rel="apple-touch-icon" sizes="57x57" href="{{asset('favicons/apple-icon-57x57.png')}}">
+	<link rel="apple-touch-icon" sizes="60x60" href="{{asset('favicons/apple-icon-60x60.png')}}">
+	<link rel="apple-touch-icon" sizes="72x72" href="{{asset('favicons/apple-icon-72x72.png')}}">
+	<link rel="apple-touch-icon" sizes="76x76" href="{{asset('favicons/apple-icon-76x76.png')}}">
+	<link rel="apple-touch-icon" sizes="114x114" href="{{asset('assets/favicons/apple-icon-114x114.png')}}">
+	<link rel="apple-touch-icon" sizes="120x120" href="{{asset('favicons/apple-icon-120x120.png')}}">
+	<link rel="apple-touch-icon" sizes="144x144" href="{{asset('favicons/apple-icon-144x144.png')}}">
+	<link rel="apple-touch-icon" sizes="152x152" href="{{asset('favicons/apple-icon-152x152.png')}}">
+	<link rel="apple-touch-icon" sizes="180x180" href="{{asset('favicons/apple-icon-180x180.png')}}">
+	<link rel="icon" type="image/png" sizes="192x192"  href="{{asset('favicons/android-icon-192x192.png')}}">
+	<link rel="icon" type="image" href="favicon.ico" sizes="16x16">
+	<link rel="manifest" href="/manifest.json">
+	<meta name="msapplication-TileColor" content="#ffffff">
+	<meta name="msapplication-TileImage" content="{{asset('favicons/ms-icon-144x144.png')}}">
+	<meta name="theme-color" content="#ffffff">
+	<meta name="theme-color" content="#ffff">
+	<meta property="fb:app_id" content="1234567890">
+	<meta property="og:locale" content="id_ID">
+	<meta property="og:title" content="{{env.APP_NAME}}<">
+	<meta property="og:url" content="">
+	<meta property="og:type" content="website">
+	<meta property="og:description" content="{{env.APP_DESCRIPTION}}">
+	<meta property="og:image" content="assets/images/favicon.png">
+	<meta name="twitter:card" content="{{env.APP_DESCRIPTION}}">
+	<meta name="twitter:title" content="{{env.APP_name}}">
+	<meta name="twitter:description" content="{{env.APP_DESCRIPTION}}">
+	<meta name="twitter:url" content="">
+	<meta name="twitter:image" content="favicon.png">
+	<meta name="twitter:image" content="favicon.png">
+	@!section('css')
+	<link rel="stylesheet" type="text/css" href="{{asset('css/component.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/style.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{asset('css/line-awesome.css')}}">
+</head>
+<body>
+	<header class="header " id="header">
+		<div class="container clear container-header   w-100">
+			<div class="header-logo mr-auto">
+				<a href="index.html">
+					<img src="assets/images/logo.svg" alt="">
+				</a>
+			</div>
+			<div class="header-search mx-auto">
+				<form action="#" class="clear form-search-header">
+					<input type="text" placeholder="SEARCH HERE..." name="key" class="on-focus">
+					<button class="button background-transparent" class="on-focus">
+					<img src="{{asset('images/icons/search.svg')}}" alt="">
+					</button>
+				</form>
+			</div>
+			<div class="header-nav ">
+				<ul class="header-nav list-none">
+					<li class="nav-list dropdown dropdown-hover notified float-left relative">
+						<a href="#" class="dropdown-trigger text-decoration-none">
+							<img src="{{asset('images/icons/icon-cart.svg')}}" alt="">
+							<span class="dropdown-notifier background-dark color-white">2</span>
+						</a>
+						<div class="dropdown-after"></div>
+						<div class="dropdown-component dropdown-menu-parent none dropdown-cart">
+							<ul class="dropdown-menu scrooling list-none">
+								<li class="dropdown-list p-15 hover-bg-white-grey overflow-hidden clear ">
+									<a href="#" class="clear">
+										<div class="clear cart-list">
+											<div class="float-left cart-image">
+												<img src="{{asset('images/components/sofa.png')}}" alt="">
+											</div>
+											<div class="float-left cart-detail pl-15">
+												<div class="clear w-100">
+													<div class="title-cart">
+														<h5 class="light color-dark">Title Cart</h5>
+													</div>
+													<div class="price-cart">
+														<span>
+															<strong class="bold color-primary">{{upperCase(env.PRICE)}} 500.000</strong>
+														</span>
+													</div>
+													<div class="price-value">
+														<span>
+															<strong class="bold color-dark">10</strong>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="dropdown-list p-15 hover-bg-white-grey overflow-hidden clear ">
+									<a href="#" class="clear">
+										<div class="clear cart-list">
+											<div class="float-left cart-image">
+												<img src="{{asset('images/components/sofa.png')}}" alt="">
+											</div>
+											<div class="float-left cart-detail pl-15">
+												<div class="clear w-100">
+													<div class="title-cart">
+														<h5 class="light color-dark">Title Cart</h5>
+													</div>
+													<div class="price-cart">
+														<span>
+															<strong class="bold color-primary">{{upperCase(env.PRICE)}} 500.000</strong>
+														</span>
+													</div>
+													<div class="price-value">
+														<span>
+															<strong class="bold color-dark">10</strong>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="dropdown-list p-15 hover-bg-white-grey overflow-hidden clear ">
+									<a href="#" class="clear">
+										<div class="clear cart-list">
+											<div class="float-left cart-image">
+												<img src="{{asset('images/components/sofa.png')}}" alt="">
+											</div>
+											<div class="float-left cart-detail pl-15">
+												<div class="clear w-100">
+													<div class="title-cart">
+														<h5 class="light color-dark">Title Cart</h5>
+													</div>
+													<div class="price-cart">
+														<span>
+															<strong class="bold color-primary">{{upperCase(env.PRICE)}} 500.000</strong>
+														</span>
+													</div>
+													<div class="price-value">
+														<span>
+															<strong class="bold color-dark">10</strong>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+								<li class="dropdown-list p-15 hover-bg-white-grey overflow-hidden clear ">
+									<a href="#" class="clear">
+										<div class="clear cart-list">
+											<div class="float-left cart-image">
+												<img src="{{asset('images/components/sofa.png')}}" alt="">
+											</div>
+											<div class="float-left cart-detail pl-15">
+												<div class="clear w-100">
+													<div class="title-cart">
+														<h5 class="light color-dark">Title Cart</h5>
+													</div>
+													<div class="price-cart">
+														<span>
+															<strong class="bold color-primary">{{upperCase(env.PRICE)}} 500.000</strong>
+														</span>
+													</div>
+													<div class="price-value">
+														<span>
+															<strong class="bold color-dark">10</strong>
+														</span>
+													</div>
+												</div>
+											</div>
+										</div>
+									</a>
+								</li>
+							</ul>
+							<div class="px-15 clear py-5 pt-15">
+								<span class="w-100 border border-top-1 border-secondary block"></span>
+							</div>
+							<div class="dropdown-footer clear ">
+								<div class="p-15">
+									<a href="#" class="button mb-15  color-primary font-normal text-decoration-none p-5 w-100 block rounded-100 center button-line-primary">LIHAT KERANJANG</a>
+									<a href="#" class="button  color-white font-normal text-decoration-none p-5 w-100 block rounded-100 center button-primary">CHECKOUT</a>
+								</div>
+							</div>
+						</div>
+					</li>
+				</ul>
+			</div>
+		</div>
+	</header>
+	@!section('content')
+	<footer class="footer background-darken clear o-hidden poppins " id="footer">
+		<div class="container clear footer-nav">
+			<div class="footer-logo float-left">
+				<div class="clear">
+					<a href="index.html">
+						<img src="assets/images/logo.svg" class="foter-logo" alt="">
+					</a>
+				</div>
+				<div class="clear">
+					<p class="color-white-grey footer-desc">
+						Chez 66°Nord, nos guides et organisateurs  de voyages sont de véritables experts du Grand Nord
+					</p>
+				</div>
+			</div>
+			<div class="footer-nav float-left">
+				<div class="w-100 clear parent">
+					<ul class="footer-list parent-list list-none float-left">
+						<li class="footer-list pb-10 footer-list-parent"><h4 class="color-white">My Account</h4></li>
+						<li class="footer-list" ><a href="#" class="button-link color-white-dark ">My Account</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Checkout</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Cart</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Whistlist</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Custom Link</a></li>
+					</ul>
+					<ul class="footer-list parent-list list-none float-left">
+						<li class="footer-list pb-10"><h4 class="color-white">Quick Links</h4></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Create Own Design</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Size Guid</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">Seminar</a></li>
+						<li class="footer-list"><a href="#" class="button-link color-white-dark ">F.A.Q</a></li>
+					</ul>
+					<ul class="footer-list  parent-list list-none float-left">
+						<li class="footer-list pb-10"><h4 class="color-white">Newsletter</h4></li>
+						<li class="footer-list"><p class="color-white-dark w-100">Get Our Latest Update In Your Email. Subscribe now to get 20% off on any product
+						</p></li>
+						<li class="footer-list clear">
+							<form action="#" class=" clear" method="post">
+								<div class="form-email-submit clear">
+									<input type="text float-left" name="email" placeholder="YOUR EMAIL ADDRESS">
+									<button class="float-right button-transparent color-white-dark input background-transparent" type="submit">
+									<i class="la la-arrow-right"></i>
+									</button>
+								</div>
+							</form>
+						</li>
+					</ul>
+				</div>
+			</div>
+			<div class="container clear">
+				<span class="linear-line"></span>
+			</div>
+			<div class="container footer-dash">
+				&nbsp;
+			</div>
+		</div>
+	</footer>
+</body>
+<script src="{{asset('js/jquery.js')}}" type="text/javascript" ></script>
+<script src="{{asset('js/jquery.nicescroll.js')}}" type="text/javascript" ></script>
+@!section('js')
+<script src="{{asset('js/app.js')}}" type="text/javascript" ></script>
+</html>

@@ -1,0 +1,38 @@
+@import "./header";
+
+
+
+.chart-container{
+	position: relative;
+	padding: 20px;
+}
+
+.triple-box{
+	padding: 10px;
+	box-sizing: border-box;
+	width: calc(100% / 3 - 16px);
+	position: relative;
+}
+
+.box-amount{
+	margin: 0;
+	position: relative;
+}
+
+.amount-wrapper{
+	position: relative;
+	margin-top: 10px;
+
+	.chartimg{
+			margin-top: 15px;
+		}
+
+	.amount-wrapper-2{
+		float: left;
+		
+	}
+}
+
+.main{
+	padding-top: 50px;
+}

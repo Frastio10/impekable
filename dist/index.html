@@ -1,0 +1,285 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<meta content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/component.css">
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.css">
+	<script src="assets/js/jquery.js"></script>
+	<title>Home - Impekable</title>
+</head>
+<body>
+	 <nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-md">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0 f-bold bg-semidarkblue" href="#">IMPEKABLE</a>
+  <div class="search-wrapper w-100 position-relative">
+  	<input class="form-control form-control-dark w-100" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
+  </div>
+  <ul class="navbar-nav px-3 bg-white">
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">
+      	<img src="assets/images/icons/icon_help-center-1.svg" alt="">
+      </a>
+    </li>
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">
+      	<img src="assets/images/icons/Chat Icon.svg" alt="">
+      </a>
+    </li>
+    <li class="nav-item text-nowrap">
+      <a class="nav-link" href="#">
+      	<img src="assets/images/icons/icon_notification.svg" alt="">
+      </a>
+    </li>
+    <li class="nav-item text-nowrap">
+      <span class="v-line"></span>
+    </li>
+    <li class="text-nowrap user-name">
+    	John Doe
+    	<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+    </li>
+    <li class="nav-item">
+    	<img src="assets/images/avatar.svg" class="avatar" alt="">
+    </li>
+  </ul>
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-darkblue sidebar">
+      <div class="sidebar-sticky">
+       <ul class="nav flex-column">
+          
+          <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_home-1.svg" alt="">
+              Home
+            </a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_dashboard-1.svg" alt="">
+              Dashboard
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_inbox-1.svg" alt="">
+              Inbox
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_products-1.svg" alt="">
+              Products
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_invoices-1.svg" alt="">
+              Invoices
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_customers-1.svg" alt="">
+              Customers
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_chat-room-1.svg" alt="">
+              Chat Room
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_calendar-1.svg" alt="">
+              Calendar
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_help-center-1.svg" alt="">
+              Help Center
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_setting-1.svg" alt="">
+              Settings
+            </a>
+          </li>
+        </ul>
+     </div>
+   </nav>
+   		<div class="col-md-10 w-100 bg-darkwhite main">
+			<div class="container">
+				<h3 class="f-regular f-28">Overview</h3>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="bg-white ml-0 mr-4 mb-4 shadow-sm triple-box">
+								Total View
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">246K</h3>
+										<img src="assets/images/icons/DownArrow.svg" alt="">
+										<span class="text-danger">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Blue.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+							<div class="bg-white ml-0 mr-4 mb-4 shadow-sm triple-box">
+								Products Sold
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">2453</h3>
+										<img src="assets/images/icons/UpArrow.svg" alt="">
+										<span class="text-success">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Purple.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+							<div class="bg-white ml-0 mr-0 mb-4 shadow-sm triple-box">
+								Total View
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">139K</h3>
+										<img src="assets/images/icons/DownArrow.svg" alt="">
+										<span class="text-danger">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Green.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="chart-container shadow-sm w-100 bg-white">
+		    		<canvas id="chart" class="bg-white" height="115vh"></canvas>
+				</div>
+			</div>
+		</div>
+
+
+</body>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
+<script src="assets/js/app.js"></script>
+</html>
+
+<!-- <div class="col-md-10 w-100 bg-darkwhite">
+			<div class="container">
+				<h3 class="f-regular f-28">Overview</h3>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="bg-white ml-0 mr-4 mb-4 shadow-sm triple-box">
+								Total View
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">246K</h3>
+										<img src="assets/images/icons/DownArrow.svg" alt="">
+										<span class="text-danger">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Blue.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+							<div class="bg-white ml-0 mr-4 mb-4 shadow-sm triple-box">
+								Products Sold
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">2453</h3>
+										<img src="assets/images/icons/UpArrow.svg" alt="">
+										<span class="text-success">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Purple.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+							<div class="bg-white ml-0 mr-0 mb-4 shadow-sm triple-box">
+								Total View
+								<div class="clearfix"></div>
+								<div class="amount-wrapper">
+									<div class="amount-wrapper-2">
+										<h3 class="f-bold f-25 box-amount">139K</h3>
+										<img src="assets/images/icons/DownArrow.svg" alt="">
+										<span class="text-danger">13.8%</span>
+									</div>
+									<img src="assets/images/Bar Chart-Green.svg" class="float-right chartimg" alt="">
+								</div>
+							</div>
+						</div>
+					</div>
+				<div class="chart-container shadow-sm w-100 bg-white">
+		    		<canvas id="chart" class="bg-white" height="115vh"></canvas>
+				</div>
+			</div>
+		</div>
+
+
+ <ul class="nav flex-column">
+          
+          <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_home-1.svg" alt="">
+              Home
+            </a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_dashboard-1.svg" alt="">
+              Dashboard
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_inbox-1.svg" alt="">
+              Inbox
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_products-1.svg" alt="">
+              Products
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_invoices-1.svg" alt="">
+              Invoices
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_customers-1.svg" alt="">
+              Customers
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_chat-room-1.svg" alt="">
+              Chat Room
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_calendar-1.svg" alt="">
+              Calendar
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_help-center-1.svg" alt="">
+              Help Center
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+              <img src="assets/images/icons/icon_setting-1.svg" alt="">
+              Settings
+            </a>
+          </li>
+        </ul> -->
