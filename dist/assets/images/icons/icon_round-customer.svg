@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" width="38" height="38" viewBox="0 0 38 38">
+  <defs>
+    <linearGradient id="linear-gradient" x2="0" y2="1" gradientUnits="objectBoundingBox">
+      <stop offset="0" stop-color="#8280ff"/>
+      <stop offset="1" stop-color="#7e96ff"/>
+    </linearGradient>
+  </defs>
+  <g id="Group_269" data-name="Group 269" transform="translate(-1155 -1394)">
+    <g id="Icon" transform="translate(0 -3)">
+      <circle id="Icon.BG" cx="19" cy="19" r="19" transform="translate(1155 1397)" fill="#e8e7ff"/>
+      <path id="New_customer_Icon" data-name="New customer Icon" d="M-6877-1838v-2h-2v-2h2v-2h2v2h2v2h-2v2Zm-12,0v-1a4.951,4.951,0,0,1,5-5h3v2h-3a2.91,2.91,0,0,0-2.8,2h5.8v2Zm3-11v-1a4.011,4.011,0,0,1,4-4,4.011,4.011,0,0,1,4,4v1a4.011,4.011,0,0,1-4,4A4.011,4.011,0,0,1-6886-1849Zm2-1v1a2.007,2.007,0,0,0,2,2,2.007,2.007,0,0,0,2-2v-1a2.006,2.006,0,0,0-2-2A2.006,2.006,0,0,0-6884-1850Z" transform="translate(8055 3262)" fill="url(#linear-gradient)"/>
+    </g>
+  </g>
+</svg>

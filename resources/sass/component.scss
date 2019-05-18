@@ -46,12 +46,35 @@
 
 
 //style
+.right-middle{
+	margin-top: 8px;
+}
+
+.badge-green{
+	background: #69E4A6;
+}
+
+.badge-red{
+	background: #FF7285;
+}
+
+.badge-orange{
+	background: #FFCA83;
+}
+
 .v-line{
 	display: block;
 	height: 23px;
 	margin-top: 9px;
 	width: 1px;
 	background: #e6e6e6;
+}
+
+.h-line{
+	display: block;	
+	width: 100%;	
+	height: 1px;	
+	background: #e6e6e6;	
 }
 
 .clearfix{
@@ -75,6 +98,18 @@
 }
 
 //end style
+
+//default navbar
+
+
+//end
+
+//
+.main{
+	right: 0;
+	margin-left: auto;
+}
+//
 
 //navbar
 

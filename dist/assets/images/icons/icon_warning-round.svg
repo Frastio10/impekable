@@ -1,0 +1,8 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Icon" transform="translate(-1155 -1397)">
+    <circle id="Icon.BG" cx="19" cy="19" r="19" transform="translate(1155 1397)" fill="#fff4e5"/>
+    <g id="alert-circle-exc" transform="translate(1166 1408)">
+      <path id="Path_257" data-name="Path 257" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,12a.945.945,0,0,1-1-1,.945.945,0,0,1,1-1,.945.945,0,0,1,1,1A.945.945,0,0,1,8,12ZM9,9H7V4H9Z" fill="#ffca83"/>
+    </g>
+  </g>
+</svg>

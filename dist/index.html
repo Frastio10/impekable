@@ -11,8 +11,8 @@
 	<script src="assets/js/jquery.js"></script>
 	<title>Home - Impekable</title>
 </head>
-<body>
-	 <nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-md">
+<body class="bg-darkwhite">
+	 <nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-sm">
   <a class="navbar-brand col-sm-3 col-md-2 mr-0 f-bold bg-semidarkblue" href="#">IMPEKABLE</a>
   <div class="search-wrapper w-100 position-relative">
   	<input class="form-control form-control-dark w-100" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
@@ -48,7 +48,7 @@
 
 <div class="container-fluid">
   <div class="row">
-    <nav class="col-md-2 d-none d-md-block bg-darkblue sidebar">
+    <nav class="col-md-2 d-none d-md-block bg-darkblue sidebar position-fixed">
       <div class="sidebar-sticky">
        <ul class="nav flex-column">
           
@@ -115,6 +115,8 @@
         </ul>
      </div>
    </nav>
+
+
    		<div class="col-md-10 w-100 bg-darkwhite main">
 			<div class="container">
 				<h3 class="f-regular f-28">Overview</h3>
@@ -145,7 +147,7 @@
 								</div>
 							</div>
 							<div class="bg-white ml-0 mr-0 mb-4 shadow-sm triple-box">
-								Total View
+								Total Earnings
 								<div class="clearfix"></div>
 								<div class="amount-wrapper">
 									<div class="amount-wrapper-2">
@@ -159,10 +161,219 @@
 						</div>
 					</div>
 				<div class="chart-container shadow-sm w-100 bg-white">
-		    		<canvas id="chart" class="bg-white" height="115vh"></canvas>
+		    		<canvas id="chart" class="bg-white" height="100vh"></canvas>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 bg-white shadow-sm mt-4 mb-4 mr-4 p-3">
+							<h5 class="f-regular f-18">Referrer</h5>
+							<table class="table f-regular f-13">
+							  <thead class="thead-light table-borderless">
+							    <tr class="text-uppercase f-bold text-black-50">
+							      <th scope="col">Location</th>
+							      <th scope="col">Views</th>
+							      <th scope="col">Sales</th>
+							      <th scope="col">Conversion</th>
+							      <th scope="col">Total</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <td>adobe.com</td>
+							      <td>3746</td>
+							      <td>752</td>
+							      <td>43%</td>
+							      <td>$19,291</td>
+							    </tr>
+							    <tr>
+							      <td>adobe.com</td>
+							      <td>8126</td>
+							      <td>728</td>
+							      <td>32%</td>
+							      <td>$17,638</td>
+							    </tr>
+							    <tr>
+							      <td>adobe.com</td>
+							      <td>8836</td>
+							      <td>694</td>
+							      <td>28%</td>
+							      <td>$16,218</td>
+							    </tr>
+							     <tr>
+							      <td>adobe.com</td>
+							      <td>1173</td>
+							      <td>645</td>
+							      <td>24%</td>
+							      <td>$14,421</td>
+							    </tr>
+							    <tr>
+							      <td>adobe.com</td>
+							      <td>2739</td>
+							      <td>539</td>
+							      <td>20%</td>
+							      <td>$12,370</td>
+							    </tr>
+							    <tr>
+							      <td>adobe.com</td>
+							      <td>1762</td>
+							      <td>432</td>
+							      <td>18%</td>
+							      <td>$9,928</td>
+							    </tr>
+							    <tr>
+							    	<td colspan="5">
+							    		<div class="more w-100 text-center">
+											<a href="#" class="f-13 f-regular">Show More</a>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+							
+						</div>
+						<div class="fill-rest map shadow-sm my-4 bg-white p-3 position-relative">
+							<div class="map-title overflow-hidden">
+								<h4 class="f-18 f-regular float-left">Details on Map</h4>
+								<a href="#" class="float-right f-13 f-regular">Show All List</a>
+							</div>
+							<div class="map-img w-100 mt-3 overflow-hidden	">
+								<img src="assets/images/Mapwithpin.svg" class="w-100" alt="">
+							</div>
+							<div class="h-line my-3"></div>
+							<div class="map-legends">
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Purple.svg" alt="">
+									<span class="f-regular f-13">Canada</span>
+									<span class="float-right f-regular f-13">$29,193</span>
+								</div>
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Green.svg" alt="">
+									<span class="f-regular f-13">Brazil</span>
+									<span class="float-right f-regular f-13">$18,832</span>
+								</div>
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Orange.svg" alt="">
+									<span class="f-regular f-13">Egypt</span>
+									<span class="float-right f-regular f-13">$19,758</span>
+								</div>
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Pink.svg" alt="">
+									<span class="f-regular f-13">Russia</span>
+									<span class="float-right f-regular f-13">$23,078</span>
+								</div>
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Purple.svg" alt="">
+									<span class="f-regular f-13">China</span>
+									<span class="float-right f-regular f-13">$29,193</span>
+								</div>
+								<div class="legend-list w-100 overflow-hidden my-2">
+									<img src="assets/images/icons/color Sign-Red.svg" alt="">
+									<span class="f-regular f-13">Australia</span>
+									<span class="float-right f-regular f-13">$37,760</span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="container">
+					<div class="row">
+						<div class="col-md-8 bg-white shadow-sm mr-4 p-3 mb-4">
+							<h4>Top Products</h4>
+							<table class="table f-13 f-regular mt-5">
+							  <thead class="thead-light text-uppercase f-bold text-black-50">
+							    <tr>
+							      <th scope="col">Product</th>
+							      <th scope="col">availability</th>
+							      <th scope="col">total</th>
+							    </tr>
+							  </thead>
+							  <tbody>
+							    <tr>
+							      <th scope="row">
+							      	<img src="assets/images/Product.img-1.svg" alt="">
+							      	<span class="f-regular f-13">Women’s Vintage Peacoat</span>
+							      </th>
+							      <td>
+							      	<span class="badge badge-pill badge-green f-11 f-bold py-2 text-muted px-3 mt-2">320 in stock</span>
+							      </td>
+							      <td class="pt-4">$29,192</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<img src="assets/images/Product.img-2.svg" alt="">
+							      	<span class="f-regular f-13">Women’s Oatmeal Sweater</span>
+							      </th>
+							      <td>
+							      	<span class="badge badge-pill badge-red f-11 f-bold py-2 text-muted px-3 mt-2">Out of stock</span>
+							      </td>
+							      <td class="pt-4">$29,192</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<img src="assets/images/Product.img-3.svg" alt="">
+							      	<span class="f-regular f-13">Women’s Denim Shirt</span>
+							      </th>
+							      <td>
+							      	<span class="badge badge-pill badge-orange f-11 f-bold py-2 text-muted px-4 mt-2">3 in stock</span>
+							      </td>
+							      <td class="pt-4">$29,192</td>
+							    </tr>
+							    <tr>
+							      <th scope="row">
+							      	<img src="assets/images/Product.img-4.svg" alt="">
+							      	<span class="f-regular f-13">Women’s Vintage Peacoat</span>
+							      </th>
+							      <td>
+							      	<span class="badge badge-pill badge-orange f-11 f-bold py-2 text-muted px-4 mt-2">3 in stock</span>
+							      </td>
+							      <td class="pt-4">$29,192</td>
+							    </tr>
+							     <tr>
+							    	<td colspan="5">
+							    		<div class="more w-100 text-center">
+											<a href="#" class="f-13 f-regular">Show More</a>
+										</div>
+									</td>
+							    </tr>
+							  </tbody>
+							</table>
+						</div>
+						<div class="fill-rest bg-white shadow-sm p-3 mb-4">
+							<ul class="list-group list-group-flush f-regular">
+							  <li class="list-group-item px-0"><h5 class="f-regular f-18">Quick Details</h5></li>
+							  <li class="list-group-item px-0 py-3">
+							  	<img src="assets/images/icons/icon_round-customer.svg" alt="">
+							  	<span class="ml-2 f-15 f-regular">290 New Customers</span>
+							  	<span class="text-muted f-regular f-13 right-middle float-right">Last 24 Hours</span>
+							  </li>
+							  <li class="list-group-item px-0 py-3">
+							  	<img src="assets/images/icons/icon_order.svg" alt="">
+							  	<span class="ml-2 f-15 f-regular">490 Orders</span>
+							  	<span class="text-muted f-regular f-13 right-middle float-right">Awaiting Process</span>
+							  </li>
+							  <li class="list-group-item px-0 py-3">
+							  	<img src="assets/images/icons/icon_timer.svg" alt="">
+							  	<span class="ml-2 f-15 f-regular">120 Orders</span>
+							  	<span class="text-muted f-regular f-13 right-middle float-right">On Hold</span>
+							  </li>
+							 <li class="list-group-item px-0 py-3">
+							  	<img src="assets/images/icons/icon_warning-round.svg" alt="">
+							  	<span class="ml-2 f-15 f-regular">490 Orders</span>
+							  	<span class="text-muted f-regular f-13 right-middle float-right">Low In Stock</span>
+							  </li>
+							  <li class="list-group-item px-0 py-3">
+							  	<img src="assets/images/icons/icon_forbid.svg" alt="">
+							  	<span class="ml-2 f-15 f-regular">42 Items</span>
+							  	<span class="text-muted f-regular f-13 right-middle float-right">Out of Stock</span>
+							  </li>
+							  <li class="list-group-item px-0"></li>
+							</ul>
+						</div>
+					</div>
 				</div>
 			</div>
 		</div>
+
 
 
 </body>
