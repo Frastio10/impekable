@@ -19,9 +19,9 @@
   </div>
   <ul class="navbar-nav px-3 bg-white">
     <li class="nav-item text-nowrap">
-      <a class="nav-link" href="#">
-      	<img src="assets/images/icons/icon_help-center-1.svg" alt="">
-      </a>
+	      <a class="nav-link" href="#">
+	      	<img src="assets/images/icons/icon_help-center-1.svg" alt="">
+	      </a>
     </li>
     <li class="nav-item text-nowrap">
       <a class="nav-link" href="#">
@@ -37,13 +37,28 @@
       <span class="v-line"></span>
     </li>
     <li class="text-nowrap user-name">
-    	John Doe
-    	<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+		<div class="dropdown">
+	    	<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	John Doe
+		    	<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+		    </a>
+		    <div class="dropdown-menu position-absolute dropdown-menu-right text-center f-13 f-regular" aria-labelledby="dropdownMenuLink">
+		    	<div class="container">
+					<span class="dropdown-item f-13"><b class="f-bold">Status :</b> Online</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Account setting</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Feedback</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Logout</span>
+				</div>
+			</div>
+		</div>
     </li>
     <li class="nav-item">
     	<img src="assets/images/avatar.svg" class="avatar" alt="">
     </li>
-  </ul>
+  </ul>	
 </nav>
 
 <div class="container-fluid">
@@ -420,6 +435,7 @@
 </body>
 <script src="https://cdnjs.cloudflare.com/ajax/libs/Chart.js/2.8.0/Chart.min.js"></script>
 <script src="assets/js/app.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.bundle.min.js"></script>
 </html>
 
 <!-- <div class="col-md-10 w-100 bg-darkwhite">
