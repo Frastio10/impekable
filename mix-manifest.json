@@ -1,4 +1,10 @@
 {
     "/dist/assets/css/style.css": "/dist/assets/css/style.css",
-    "/dist/assets/css/component.css": "/dist/assets/css/component.css"
+    "/dist/assets/css/component.css": "/dist/assets/css/component.css",
+    "/dist/assets/css/invoices.css": "/dist/assets/css/invoices.css",
+    "/dist/assets/css/calendar.css": "/dist/assets/css/calendar.css",
+    "/dist/assets/css/products.css": "/dist/assets/css/products.css",
+    "/dist/assets/css/customers.css": "/dist/assets/css/customers.css",
+    "/dist/assets/css/chat-room.css": "/dist/assets/css/chat-room.css",
+    "/dist/assets/css/login.css": "/dist/assets/css/login.css"
 }

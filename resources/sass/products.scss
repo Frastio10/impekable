@@ -1,0 +1,20 @@
+@import "./header";
+@import "component";
+
+.chart-wrapper-1{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	flex-direction: column;
+	vertical-align: middle;
+
+	.position-absolute{
+		margin-bottom: 0;
+		position: absolute;
+		margin-top: 12px;
+
+		h4{
+			margin-bottom: 0;
+		}
+	}
+}

@@ -1,6 +1,6 @@
 /* jquery.nicescroll
--- version 3.7.6
--- copyright 2017-07-19 InuYaksa*2017
+-- version 3.7.5
+-- copyright 2017-07-13 InuYaksa*2017
 -- licensed under the MIT
 --
 -- https://nicescroll.areaaperta.com/
@@ -261,7 +261,7 @@
 
     var self = this;
 
-    this.version = '3.7.6';
+    this.version = '3.7.5';
     this.name = 'nicescroll';
 
     this.me = me;
@@ -2303,7 +2303,7 @@
       if (!self.hasborderbox) self.scrollvaluemax -= self.cursor[0].offsetHeight - self.cursor[0].clientHeight;
 
       if (self.railh) {
-        self.railh.width = (self.page.maxh > 0) ? (self.rail.width) : self.view.w;
+        self.railh.width = (self.page.maxh > 0) ? (self.view.w - self.rail.width) : self.view.w;
         self.scrollvaluemaxw = self.railh.width - self.cursorwidth - (opt.railpadding.left + opt.railpadding.right);
       }
 
@@ -2514,7 +2514,7 @@
 
     this.undelegate = function (dom, name, fn, bubble, active) {
       var de = delegatevents[name]||false;
-      if (de&&de.l) {  // quick fix #683
+      if (de) {
         for (var a=0,l=de.l.length;a<l;a++) {
           if (de.a[a] === self.id) {
             de.a.splice(a);

@@ -1,0 +1,576 @@
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+/**
+** this for first setup
+**/
+* {
+  margin: 0;
+  padding: 0;
+}
+
+/**
+** setup fonts
+**/
+/** 
+** raleway
+**/
+/*open sans */
+@font-face {
+  font-family: opensans-light;
+  src: url(../fonts/OpenSans-Light.ttf);
+}
+
+@font-face {
+  font-family: opensans;
+  src: url(../fonts/OpenSans-Regular.ttf);
+}
+
+@font-face {
+  font-family: opensans-italic;
+  src: url(../fonts/OpenSans-Italic.ttf);
+}
+
+@font-face {
+  font-family: opensans-semibold;
+  src: url(../fonts/OpenSans-SemiBold.ttf);
+}
+
+@font-face {
+  font-family: opensans-bold;
+  src: url(../fonts/OpenSans-Bold.ttf);
+}
+
+/**
+** poppins 
+**/
+@font-face {
+  font-family: Volkhov-Bold;
+  src: url(../fonts/Volkhov-Bold.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-BoldItalic;
+  src: url(../fonts/Volkhov-BoldItalic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Italic;
+  src: url(../fonts/Volkhov-Italic.ttf);
+}
+
+@font-face {
+  font-family: Volkhov-Regular;
+  src: url(../fonts/Volkhov-Regular.ttf);
+}
+
+/**
+** this for setup variable
+**/
+@font-face {
+  font-family: SourceSansPro-Regular;
+  src: url("../fonts/SourceSansPro-Regular.otf");
+}
+
+@font-face {
+  font-family: SourceSansPro-Bold;
+  src: url("../fonts/SourceSansPro-Bold.otf");
+}
+
+:root {
+  --light-purple:#A4A1FB;
+  --light-grey:#A1A0AE;
+  --lighten-grey:#F5F6FA;
+  --grey:#EDECFE;
+  --green:#4AD991;
+  --white:#fff;
+  --light-red:#ff6565;
+  --blue:#3b86ff;
+  --purple:#A3A0FB;
+  --skyblue:#56D9FE;
+  --dark-blue:#43425D;
+  --dark-white:#F0F0F7;
+  --dark-blue-a:#3B3B53;
+}
+
+.f-10 {
+  font-size: 10px !important;
+}
+
+.f-11 {
+  font-size: 11px !important;
+}
+
+.f-12 {
+  font-size: 12px !important;
+}
+
+.f-13 {
+  font-size: 13px !important;
+}
+
+.f-14 {
+  font-size: 14px !important;
+}
+
+.f-15 {
+  font-size: 15px !important;
+}
+
+.f-16 {
+  font-size: 16px !important;
+}
+
+.f-17 {
+  font-size: 17px !important;
+}
+
+.f-18 {
+  font-size: 18px !important;
+}
+
+.f-19 {
+  font-size: 19px !important;
+}
+
+.f-20 {
+  font-size: 20px !important;
+}
+
+.f-21 {
+  font-size: 21px !important;
+}
+
+.f-22 {
+  font-size: 22px !important;
+}
+
+.f-23 {
+  font-size: 23px !important;
+}
+
+.f-24 {
+  font-size: 24px !important;
+}
+
+.f-25 {
+  font-size: 25px !important;
+}
+
+.f-26 {
+  font-size: 26px !important;
+}
+
+.f-27 {
+  font-size: 27px !important;
+}
+
+.f-28 {
+  font-size: 28px !important;
+}
+
+.f-29 {
+  font-size: 29px !important;
+}
+
+.f-30 {
+  font-size: 30px !important;
+}
+
+.f-31 {
+  font-size: 31px !important;
+}
+
+.f-32 {
+  font-size: 32px !important;
+}
+
+.f-33 {
+  font-size: 33px !important;
+}
+
+.f-34 {
+  font-size: 34px !important;
+}
+
+.f-35 {
+  font-size: 35px !important;
+}
+
+.f-36 {
+  font-size: 36px !important;
+}
+
+.f-37 {
+  font-size: 37px !important;
+}
+
+.f-38 {
+  font-size: 38px !important;
+}
+
+.f-39 {
+  font-size: 39px !important;
+}
+
+.f-40 {
+  font-size: 40px !important;
+}
+
+.text-green {
+  color: var(--green);
+}
+
+.text-grey {
+  color: var(--light-grey);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-light-purple {
+  color: var(--light-purple);
+}
+
+.text-skyblue {
+  color: var(--skyblue);
+}
+
+.f-bold {
+  font-family: SourceSansPro-Bold;
+}
+
+.f-regular {
+  font-family: SourceSansPro-Regular;
+}
+
+.justify-content-center {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
+  -ms-flex-pack: center;
+  -webkit-box-pack: center;
+          justify-content: center;
+  vertical-align: middle;
+  -ms-flex-align: center;
+  -webkit-box-align: center;
+          align-items: center;
+}
+
+.right-middle {
+  margin-top: 8px;
+}
+
+.badge-green {
+  background: #69E4A6;
+}
+
+.badge-red {
+  background: #FF7285;
+}
+
+.badge-orange {
+  background: #FFCA83;
+}
+
+.v-line {
+  display: block;
+  height: 23px;
+  margin-top: 9px;
+  width: 1px;
+  background: #e6e6e6;
+}
+
+.h-line {
+  display: block;
+  width: 100%;
+  height: 1px;
+  background: #e6e6e6;
+}
+
+.bg-lighten-grey {
+  background: var(--lighten-grey) !important;
+}
+
+.clearfix {
+  clear: both;
+}
+
+.bg-semidarkblue {
+  background: var(--dark-blue-a) !important;
+}
+
+.bg-puprle {
+  background: var(--lightpurple) !important;
+}
+
+.bg-darkblue {
+  background: var(--dark-blue) !important;
+}
+
+.bg-darkwhite {
+  background: var(--dark-white) !important;
+}
+
+.bg-white {
+  background: var(--white) !important;
+}
+
+.dots {
+  width: 10px;
+  height: 10px;
+  background: var(--grey);
+  border-radius: 100%;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+.dots-purple {
+  width: 10px;
+  height: 10px;
+  background: var(--light-purple);
+  border-radius: 100%;
+  margin-top: 6px;
+  margin-right: 5px;
+}
+
+.outline-none {
+  outline: none;
+}
+
+.navbar input:focus {
+  outline-offset: 0 !important;
+  outline: none !important;
+}
+
+.main {
+  right: 0;
+  margin-left: auto;
+}
+
+.navbar {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar .search-wrapper input[type="text"] {
+  border: none !important;
+  outline: none !important;
+  padding-left: 50px;
+  padding-right: 50px;
+}
+
+.navbar .search-wrapper:before {
+  content: "";
+  position: absolute;
+  background: url("../images/icons/icon_search.svg");
+  width: 16px;
+  height: 16px;
+  left: 30px;
+  top: 12px;
+}
+
+.navbar .navbar-nav {
+  -ms-flex-direction: unset;
+  -webkit-box-orient: unset;
+  -webkit-box-direction: unset;
+          flex-direction: unset;
+  -webkit-box-sizing: border-box !important;
+  box-sizing: border-box !important;
+}
+
+.navbar .navbar-nav .nav-item {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  padding-left: 10px;
+  padding-right: 10px;
+}
+
+.navbar .navbar-nav .nav-item .nav-link {
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+.navbar .navbar-nav .nav-item:nth-child(3) {
+  margin-top: -3px;
+}
+
+.navbar .user-name {
+  display: inline-block;
+  margin-top: 8px;
+  margin-left: 5px;
+  cursor: pointer;
+}
+
+.navbar .avatar {
+  width: 30px;
+  margin-top: 4px;
+  cursor: pointer;
+}
+
+.nav-link {
+  padding-left: 0 !important;
+}
+
+.sidebar-sticky {
+  margin-top: 40px;
+}
+
+.sidebar-sticky .nav-item {
+  padding-top: 12.7px;
+  padding-bottom: 12.7px;
+  padding-left: 20px;
+}
+
+.sidebar-sticky .nav-item .nav-link svg {
+  margin-right: 10px;
+}
+
+.sidebar-sticky .nav-item.active {
+  border-left: 5px solid var(--purple);
+  background: var(--dark-blue-a);
+}
+
+.sidebar-sticky .nav-item.active svg path {
+  fill: #9290E2;
+}
+
+.sidebar {
+  padding-left: 0 !important;
+  padding-right: 0 !important;
+}
+
+.dropdown-menu:after {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  right: 15px;
+  border-width: 0 6px 6px 6px;
+  border-style: solid;
+  border-color: #fff transparent;
+}
+
+.dropdown-menu:before {
+  content: "";
+  width: 0;
+  height: 0;
+  position: absolute;
+  bottom: 100%;
+  right: 13px;
+  border-width: 0 8px 8px 8px;
+  border-style: solid;
+  border-color: rgba(0, 0, 0, 0.17) transparent;
+}
+
+.dropdown-menu {
+  border: 1px solid rgba(0, 0, 0, 0.17);
+  background: #fff;
+  -webkit-transition: .3s ease;
+  transition: .3s ease;
+  -webkit-box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+  box-shadow: 0 0 5px rgba(0, 0, 0, 0.1);
+}
+
+.dropdown-menu .dropdown-item {
+  padding: 0;
+}
+
+.dropdown-menu .dropdown-item p {
+  margin: 0;
+}
+
+.dropdown-menu .dropdown-item .img-notification {
+  float: left;
+}
+
+.dropdown-menu .dropdown-item .img-notification img {
+  width: 37px;
+}
+
+.dd-notification {
+  min-width: 18rem !important;
+  right: -14px !important;
+}
+
+.dd-account {
+  right: -17px !important;
+}
+
+.dd-inbox {
+  min-width: 10rem !important;
+  right: -10px !important;
+}
+
+.bg-left {
+  background: url("../images/bg-account.svg") !important;
+}

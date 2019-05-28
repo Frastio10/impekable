@@ -1,0 +1,731 @@
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<meta content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/customers.css">
+	<link rel="stylesheet" href="assets/css/component.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<script src="assets/js/jquery.js"></script>
+	<title>Customers - Impekable</title>
+</head>
+<body class="bg-darkwhite">
+	<!--for navbar -->
+	 <nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-sm">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0 f-bold bg-semidarkblue" href="index.html">IMPEKABLE</a>
+  <div class="search-wrapper w-100 position-relative">
+  	<input class="form-control form-control-dark w-100" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
+  </div>
+  <ul class="navbar-nav px-3 bg-white">
+    <li class="nav-item text-nowrap">
+	      <a class="nav-link" href="#">
+	      	<img src="assets/images/icons/icon_help-center-1.svg" alt="">
+	      </a>
+    </li>
+    <li class="nav-item text-nowrap">
+		<div class="dropdown">
+	      		<a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      			<img src="assets/images/icons/Chat Icon.svg" alt="">
+	     	 	</a>
+	      		 <div class="dropdown-menu position-absolute dropdown-menu-right text-left f-13 f-regular dd-notification" aria-labelledby="dropdownMenuLink">
+			    	<div class="container">
+			    		<div class="pt-2 pb-1">
+							<h2 class="f-17">Notifications</h2>
+						</div>
+						<div class="dropdown-divider mt-0"></div>
+			    		<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/david-lee.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">David Lee</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/alex-johnson.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Alex Johnson</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/jonathan-chen.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Jonathan Chen</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/robert-grant.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Robert Grant</b> sent you mail.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/david-james.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">David James</b> sent you mail.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<div class=" f-13 text-center py-2">
+							<a href="inbox.html" class="text-decoration-none">View all notifications</a>
+						</div>
+					</div>
+				</div>
+			</div>
+    </li>	
+    <li class="nav-item text-nowrap">
+    	<div class="dropdown">
+	      <a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      	<img src="assets/images/icons/icon_notification.svg" alt="">
+	      </a>
+	      <div class="dropdown-menu position-absolute dropdown-menu-right text-center pt-0 dd-inbox" aria-labelledby="dropdownMenuLink">
+					<div class="f-17 bg-white w-100 pt-3 pr-3 pl-3 pb-3">
+						<h4 class="f-17 f-regular m-0">Notifications</h3>
+					</div>
+					<div class="dropdown-divider m-0"></div>
+					<div class="text-left bg-light  f-13 f-regular ">
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">David Lee</b>
+								<p>Hey, I just read your message. How are you?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider  m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Jonathan Chen</b>
+								<p>Are you available later today to chat?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Jackie Berry</b>
+								<p>I will be unavailable until after 5pm today. </p>
+							</div>
+						</a>
+						<div class="dropdown-divider  m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Alex Johnson</b>
+								<p>How is your day?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Maria Cooper</b>
+								<p>What are you doing this weekend?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+					</div>
+						<div class="bg-white w-100 py-2">
+							<a class="color-primary text-decoration-none f-12" href="#">See all</a>
+						</div>
+					
+			</div>
+	    </div>
+    </li>
+    <li class="nav-item text-nowrap">
+      <span class="v-line"></span>
+    </li>
+    <li class="text-nowrap user-name">
+		<div class="dropdown">
+	    	<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	John Doe
+		    	<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+		    </a>
+		    <div class="dropdown-menu position-absolute dropdown-menu-right text-center f-13 f-regular dd-account" aria-labelledby="dropdownMenuLink">
+		    	<div class="container">
+					<span class="dropdown-item f-13"><b class="f-bold">Status :</b> Online</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Account setting</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Feedback</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Logout</span>
+				</div>
+			</div>
+		</div>
+    </li>
+    <li class="nav-item">
+		<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    		<img src="assets/images/avatar.svg" class="avatar" alt="">
+    	</a>
+    </li>
+  </ul>	
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-darkblue sidebar position-fixed">
+      <div class="sidebar-sticky">
+       <ul class="nav flex-column">
+          
+          <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_home" transform="translate(-43 -91)">
+				    <path id="Path_357" data-name="Path 357" d="M15.581,5.186l-7-5a1,1,0,0,0-1.162,0l-7,5A1,1,0,0,0,1.581,6.814L2,6.515V15a1,1,0,0,0,1,1H13a1,1,0,0,0,1-1V6.515A1.7,1.7,0,0,0,15,7a1,1,0,0,0,.582-1.814ZM12,14H10V11a2,2,0,0,0-4,0v3H4V5.086L8,2.229l4,2.857Z" transform="translate(43 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Home
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="index.html">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_dashboard" transform="translate(-79 -91)">
+				    <path id="Union_8" data-name="Union 8" d="M-481-8a.945.945,0,0,1-1-1v-9a.945.945,0,0,1,1-1h2a.945.945,0,0,1,1,1v9a.945.945,0,0,1-1,1Zm-6,0a.944.944,0,0,1-1-1V-23a.945.945,0,0,1,1-1h2a.945.945,0,0,1,1,1V-9a.944.944,0,0,1-1,1Zm-6,0a.945.945,0,0,1-1-1v-4a.945.945,0,0,1,1-1h2a.946.946,0,0,1,1,1v4a.945.945,0,0,1-1,1Z" transform="translate(573 115)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Dashboard
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="inbox.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+			  <g id="icon_inbox" transform="translate(-115 -93)">
+			    <path id="Path_358" data-name="Path 358" d="M15,1H1A1,1,0,0,0,0,2V14a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V2A1,1,0,0,0,15,1ZM14,13H2V6.723L7.5,9.868a1,1,0,0,0,.992,0L14,6.723Zm0-8.58L8,7.849,2,4.42V3H14Z" transform="translate(115 92)" fill="#a5a4bf"/>
+			  </g>
+			</svg>
+              Inbox
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="products.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15.999" height="15.999" viewBox="0 0 15.999 15.999">
+				  <g id="icon_products" transform="translate(-151 -91)">
+				    <path id="Union_9" data-name="Union 9" d="M11-203v-16h2v16Zm-14,0v-16h2v16Zm11-5v-11h2v11Zm-5,0v-11H7v11Zm-3,0v-11H2v11Z" transform="translate(154 310)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Products
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="invoices.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+				  <g id="icon_Invoices" transform="translate(-187 -91)">
+				    <path id="Path_102" data-name="Path 102" d="M14,0H2A.945.945,0,0,0,1,1V16l3-2,2,2,2-2,2,2,2-2,3,2V1A.945.945,0,0,0,14,0ZM12,10H4V8h8Zm0-4H4V4h8Z" transform="translate(186 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Invoices
+            </a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link  text-light f-regular" href="customers.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+				  <g id="icon_customers" transform="translate(-221 -91)">
+				    <path id="Union_10" data-name="Union 10" d="M-4-310a6.018,6.018,0,0,1,6-6H4a6.018,6.018,0,0,1,6,6Zm2.6-2H7.5A4.033,4.033,0,0,0,4-314H2.1A4.035,4.035,0,0,0-1.4-312Zm.4-9v-1a4.012,4.012,0,0,1,4-4,4.012,4.012,0,0,1,4,4v1a4.012,4.012,0,0,1-4,4A4.012,4.012,0,0,1-1-321Zm2-1v1a2.006,2.006,0,0,0,2,2,2.006,2.006,0,0,0,2-2v-1a2.006,2.006,0,0,0-2-2A2.006,2.006,0,0,0,1-322Z" transform="translate(225 417)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Customers
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="chat-room.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_chat-room" transform="translate(-255 -91)">
+				    <path id="Union_11" data-name="Union 11" d="M11-382H6l1.828-2H14a1,1,0,0,0,1-1v-6h1a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H14v3Zm-7-4H2a1,1,0,0,1-1-1v-7a1,1,0,0,1,1-1H12a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H7l-3,3Z" transform="translate(254 486)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Chat Room
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="calendar.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_calendar" transform="translate(-291 -91)">
+				    <rect id="Rectangle_557" data-name="Rectangle 557" width="16" height="16" transform="translate(291 91)" fill="none"/>
+				    <path id="Path_149" data-name="Path 149" d="M2,5v9H14V5ZM13,2h2a.945.945,0,0,1,1,1V15a.945.945,0,0,1-1,1H1a.945.945,0,0,1-1-1V3A.945.945,0,0,1,1,2H3V1A.945.945,0,0,1,4,0,.945.945,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z" transform="translate(291 91)" fill="#a5a4bf" fill-rule="evenodd"/>
+				  </g>
+				</svg>
+              Calendar
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_help-center" transform="translate(-327 -91)">
+				    <path id="Path_107" data-name="Path 107" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,10a2,2,0,1,1,2-2A2.006,2.006,0,0,1,8,10ZM8,2a5.834,5.834,0,0,1,2.6.6L9.044,4.156a3.591,3.591,0,0,0-2.089,0L5.4,2.6A5.834,5.834,0,0,1,8,2ZM2,8a5.834,5.834,0,0,1,.6-2.6L4.156,6.956a3.591,3.591,0,0,0,0,2.089L2.6,10.6A5.834,5.834,0,0,1,2,8Zm6,6a5.834,5.834,0,0,1-2.6-.6l1.556-1.556a3.591,3.591,0,0,0,2.089,0L10.6,13.4A5.834,5.834,0,0,1,8,14Zm5.4-3.4L11.844,9.044a3.591,3.591,0,0,0,0-2.089L13.4,5.4a5.933,5.933,0,0,1,0,5.2Z" transform="translate(327 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Help Center
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_setting" transform="translate(-363 -91)">
+				    <path id="Path_108" data-name="Path 108" d="M13.3,5.2l1.1-2.1L13,1.7,10.9,2.8a3.582,3.582,0,0,0-1.1-.4L9,0H7L6.2,2.3a4.179,4.179,0,0,0-1,.4L3.1,1.6,1.6,3.1,2.7,5.2a4.179,4.179,0,0,0-.4,1L0,7V9l2.3.8c.1.4.3.7.4,1.1L1.6,13,3,14.4l2.1-1.1a3.582,3.582,0,0,0,1.1.4L7,16H9l.8-2.3c.4-.1.7-.3,1.1-.4L13,14.4,14.4,13l-1.1-2.1a3.582,3.582,0,0,0,.4-1.1L16,9V7l-2.3-.8A4.179,4.179,0,0,0,13.3,5.2ZM8,11A2.946,2.946,0,0,1,5,8,2.946,2.946,0,0,1,8,5a2.946,2.946,0,0,1,3,3A2.946,2.946,0,0,1,8,11Z" transform="translate(363 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Settings
+            </a>
+          </li>
+        </ul>
+     </div>
+   </nav>
+ <!-- end nav-->
+ 	<div class="col-md-10 w-100 bg-darkwhite main px-5 f-regular mb-5">
+ 		<div class="container">
+ 			<div class="container-fluid">
+ 				<div class="row mb-4">
+		 			<h4 class="float-left">Customers</h4>
+		 			<div class="search-wrapper ml-auto col-6 pr-0 card-customers-right position-relative">
+		 				<div class="bg-white position-relative">
+		 					<input type="text" class="searchbox border-0 w-100 pr-5 position-absolute" placeholder="Search Name...">
+		 					<img src="assets/images/icons/icon_search.svg" class="position-absolute" alt="">
+		 				</div>
+		 			</div>
+		 		</div>
+	 		</div>
+ 			<div class="container-fluid">
+ 				<div class="row mb-4">
+	 				<div class="col-6 card-customers-left">
+	 					<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+	 						<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark"> 								
+			 						<div class="float-left overflow-hidden">
+										<img src="assets/images/customers-avatar/david-james.svg" alt="">
+			 						</div>
+			 						<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+			 							<b class="f-bold f-18">David James</b>
+			 							<span class="text-grey">United States</span>
+										<span class="text-grey">Mobile : 871.567.4877</span>
+			 						</div>
+								</a>
+		 						<div class="float-right">
+	 								<ul class="list-unstyled">
+		 								<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+		 								<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+		 							</ul>
+		 						</div>
+		 					</div>
+	 						<div class="dropdown-divider"></div>
+	 						<div class="w-100 d-flex justify-content-center">
+	 							<ul class="list-unstyled mb-0">
+	 								<li class="float-left ml-0">
+	 									<a href="https://www.instagram.com/frastio10/" target="_blank" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_instagram.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_twitter.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+											<img src="assets/images/icons/icon_facebook.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_mail.svg" alt="">
+	 									</a>
+	 								</li>
+	 							</ul>
+	 						</div>
+						</div>
+	 				</div>
+ 					<div class="col-6 card-customers-right">
+ 						<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+ 							<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark">	
+		 							<div class="float-left overflow-hidden">
+		 								<img src="assets/images/customers-avatar/tony-stark.svg" alt="">
+		 							</div>
+		 							<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+		 								<b class="f-bold f-18">Tony Stark</b>
+		 								<span class="text-grey">United States</span>
+		 								<span class="text-grey">Mobile : 871.567.4877</span>
+		 							</div>
+		 						</a>
+	 							<div class="float-right">
+	 								<ul class="list-unstyled">
+	 									<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+	 									<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+	 								</ul>
+	 							</div>
+	 						</div>
+ 							<div class="dropdown-divider"></div>
+ 							<div class="w-100 d-flex justify-content-center">
+ 								<ul class="list-unstyled mb-0">
+ 									<li class="float-left ml-0">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_instagram.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_twitter.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_facebook.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_mail.svg" alt="">
+ 										</a>
+ 									</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="container-fluid">
+ 				<div class="row mb-4">
+	 				<div class="col-6 card-customers-left">
+	 					<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+	 						<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark"> 								
+			 						<div class="float-left overflow-hidden">
+										<img src="assets/images/customers-avatar/Bessie-berry.svg" alt="">
+			 						</div>
+			 						<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+			 							<b class="f-bold f-18">Bessie Berry</b>
+			 							<span class="text-grey">United States</span>
+										<span class="text-grey">Mobile : 871.567.4877</span>
+			 						</div>
+								</a>
+		 						<div class="float-right">
+	 								<ul class="list-unstyled">
+		 								<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+		 								<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+		 							</ul>
+		 						</div>
+		 					</div>
+	 						<div class="dropdown-divider"></div>
+	 						<div class="w-100 d-flex justify-content-center">
+	 							<ul class="list-unstyled mb-0">
+	 								<li class="float-left ml-0">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_instagram.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_twitter.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+											<img src="assets/images/icons/icon_facebook.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_mail.svg" alt="">
+	 									</a>
+	 								</li>
+	 							</ul>
+	 						</div>
+						</div>
+	 				</div>
+ 					<div class="col-6 card-customers-right">
+ 						<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+ 							<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark">	
+		 							<div class="float-left overflow-hidden">
+		 								<img src="assets/images/customers-avatar/gleb-Kuznetsov.svg" alt="">
+		 							</div>
+		 							<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+		 								<b class="f-bold f-18">Gleb Kuznetsov</b>
+		 								<span class="text-grey">United States</span>
+		 								<span class="text-grey">Mobile : 871.567.4877</span>
+		 							</div>
+		 						</a>
+	 							<div class="float-right">
+	 								<ul class="list-unstyled">
+	 									<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+	 									<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+	 								</ul>
+	 							</div>
+	 						</div>
+ 							<div class="dropdown-divider"></div>
+ 							<div class="w-100 d-flex justify-content-center">
+ 								<ul class="list-unstyled mb-0">
+ 									<li class="float-left ml-0">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_instagram.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_twitter.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_facebook.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_mail.svg" alt="">
+ 										</a>
+ 									</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="container-fluid">
+ 				<div class="row mb-4">
+	 				<div class="col-6 card-customers-left">
+	 					<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+	 						<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark"> 								
+			 						<div class="float-left overflow-hidden">
+										<img src="assets/images/customers-avatar/Andrey-Prokopenko.svg" alt="">
+			 						</div>
+			 						<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+			 							<b class="f-bold f-18">Andrey Prokopenko</b>
+			 							<span class="text-grey">United States</span>
+										<span class="text-grey">Mobile : 871.567.4877</span>
+			 						</div>
+								</a>
+		 						<div class="float-right">
+	 								<ul class="list-unstyled">
+		 								<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+		 								<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+		 							</ul>
+		 						</div>
+		 					</div>
+	 						<div class="dropdown-divider"></div>
+	 						<div class="w-100 d-flex justify-content-center">
+	 							<ul class="list-unstyled mb-0">
+	 								<li class="float-left ml-0">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_instagram.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_twitter.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+											<img src="assets/images/icons/icon_facebook.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_mail.svg" alt="">
+	 									</a>
+	 								</li>
+	 							</ul>
+	 						</div>
+						</div>
+	 				</div>
+ 					<div class="col-6 card-customers-right">
+ 						<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+ 							<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark">	
+		 							<div class="float-left overflow-hidden">
+		 								<img src="assets/images/customers-avatar/nick-herasimenka.svg" alt="">
+		 							</div>
+		 							<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+		 								<b class="f-bold f-18">Nick Herasimenka</b>
+		 								<span class="text-grey">United States</span>
+		 								<span class="text-grey">Mobile : 871.567.4877</span>
+		 							</div>
+		 						</a>
+	 							<div class="float-right">
+	 								<ul class="list-unstyled">
+	 									<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+	 									<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+	 								</ul>
+	 							</div>
+	 						</div>
+ 							<div class="dropdown-divider"></div>
+ 							<div class="w-100 d-flex justify-content-center">
+ 								<ul class="list-unstyled mb-0">
+ 									<li class="float-left ml-0">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_instagram.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_twitter.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_facebook.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_mail.svg" alt="">
+ 										</a>
+ 									</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<div class="container-fluid">
+ 				<div class="row mb-4">
+	 				<div class="col-6 card-customers-left">
+	 					<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+	 						<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark"> 								
+			 						<div class="float-left overflow-hidden">
+										<img src="assets/images/customers-avatar/valentin-salmon.svg" alt="">
+			 						</div>
+			 						<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+			 							<b class="f-bold f-18">Valentin Salmon</b>
+			 							<span class="text-grey">United States</span>
+										<span class="text-grey">Mobile : 871.567.4877</span>
+			 						</div>
+								</a>
+		 						<div class="float-right">
+	 								<ul class="list-unstyled">
+		 								<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+		 								<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+		 							</ul>
+		 						</div>
+		 					</div>
+	 						<div class="dropdown-divider"></div>
+	 						<div class="w-100 d-flex justify-content-center">
+	 							<ul class="list-unstyled mb-0">
+	 								<li class="float-left ml-0">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_instagram.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_twitter.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+											<img src="assets/images/icons/icon_facebook.svg" alt="">
+	 									</a>
+	 								</li>
+	 								<li class="float-left ml-5">
+	 									<a href="" class="text-decoration-none">
+	 										<img src="assets/images/icons/icon_mail.svg" alt="">
+	 									</a>
+	 								</li>
+	 							</ul>
+	 						</div>
+						</div>
+	 				</div>
+ 					<div class="col-6 card-customers-right">
+ 						<div class="bg-white shadow-sm pt-3 pb-3 d-flex flex-column">
+ 							<div class="w-100 overflow-hidden px-3 pb-2">
+ 								<a href="#" class="text-decoration-none text-dark">	
+		 							<div class="float-left overflow-hidden">
+		 								<img src="assets/images/customers-avatar/Miro-kirov.svg" alt="">
+		 							</div>
+		 							<div class="d-flex flex-column f-regular f-15 ml-3 mr-0 float-left position-relative">
+		 								<b class="f-bold f-18">Miro Kirov</b>
+		 								<span class="text-grey">United States</span>
+		 								<span class="text-grey">Mobile : 871.567.4877</span>
+		 							</div>
+		 						</a>
+	 							<div class="float-right">
+	 								<ul class="list-unstyled">
+	 									<li class="float-left mr-3"><img src="assets/images/icons/icon_edit.svg" alt=""></li>
+	 									<li class="float-left"><img src="assets/images/icons/icon_close.svg" alt=""></li>
+	 								</ul>
+	 							</div>
+	 						</div>
+ 							<div class="dropdown-divider"></div>
+ 							<div class="w-100 d-flex justify-content-center">
+ 								<ul class="list-unstyled mb-0">
+ 									<li class="float-left ml-0">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_instagram.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_twitter.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_facebook.svg" alt="">
+ 										</a>
+ 									</li>
+ 									<li class="float-left ml-5">
+ 										<a href="" class="text-decoration-none">
+ 											<img src="assets/images/icons/icon_mail.svg" alt="">
+ 										</a>
+ 									</li>
+ 								</ul>
+ 							</div>
+ 						</div>
+ 					</div>
+ 				</div>
+ 			</div>
+ 			<nav aria-label="Page navigation example" class="float-right">
+			  <ul class="pagination">
+			    <li class="page-item mr-2">
+			      <a class="page-link rounded prev" href="#" aria-label="Previous">
+			        <img src="assets/images/icons/icon_left-arrow.svg" alt="">
+			      </a>
+			    </li>
+			    <li class="page-item mr-2 active"><a class="page-link rounded" href="#">1</a></li>
+			    <li class="page-item mr-2"><a class="page-link rounded" href="#">2</a></li>
+			    <li class="page-item mr-2"><a class="page-link rounded" href="#">3</a></li>
+			    <li class="page-item mr-2"><a class="page-link rounded" href="#">4</a></li>
+			    <li class="page-item mr-2"><a class="page-link rounded" href="#">5</a></li>
+			    <li class="page-item mr-0">
+			      <a class="page-link rounded next" href="#" aria-label="Next">
+			        <img src="assets/images/icons/icon_right-arrow.svg" alt="">
+			      </a>
+			    </li>
+			  </ul>
+			</nav>
+
+ 		</div>
+ 	</div>
+ </div>
+ </div>
+</body>
+<script src="assets/js/app.js"></script>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+</html>

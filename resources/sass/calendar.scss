@@ -1,0 +1,23 @@
+@import "./header";
+@import "component";
+
+
+
+.fc-button{
+	background-color: #fff !important;
+	border-color: #D7DAE2 !important;
+	color: #000 !important;
+}
+
+.fc-button-primary:disabled{
+	color: var(--blue) !important;
+}
+
+.fc-day{
+	background: var(--white) !important;
+	border-color:#EAF0F4 !important;
+}
+
+.fc-today{
+	background: #F5F6FA !important;
+}

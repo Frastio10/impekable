@@ -1,0 +1,33 @@
+@import "./header";
+@import "component";
+
+.card-customers-left{
+	padding-left: 0 !important;
+	padding-right:.75rem !important;
+}
+
+.card-customers-right{
+	padding-right: 0 !important;
+	padding-left:.75rem !important;
+}
+
+.searchbox{
+	height: 35px;
+	outline: none;
+	border-radius: 3px;
+
+	padding-left: 33px;
+}
+
+.search-wrapper.card-customers-right{
+	
+	img{
+		top:10px;
+		left: 10px;
+	}
+}
+
+.prev, .next{
+	padding-top:11px !important;
+	padding-bottom: 11px !important;
+}

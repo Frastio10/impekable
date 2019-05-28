@@ -1,0 +1,559 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<meta charset="UTF-8">
+	<meta charset="UTF-8">
+	<meta name="viewport">
+	<meta content="width=device-width,initial-scale=1">
+	<link rel="stylesheet" href="assets/css/style.css">
+	<link rel="stylesheet" href="assets/css/products.css">
+	<link rel="stylesheet" href="assets/css/component.css">
+	<link rel="stylesheet" href="assets/css/bootstrap.min.css">
+	<link rel="stylesheet" href="assets/css/chart.css">
+	<script src="assets/js/jquery.js"></script>
+	<title>Products - Impekable</title>
+</head>
+<body class="bg-darkwhite">
+	<!--for navbar -->
+<nav class="navbar navbar-dark fixed-top bg-white flex-md-nowrap p-0 shadow-sm">
+  <a class="navbar-brand col-sm-3 col-md-2 mr-0 f-bold bg-semidarkblue" href="index.html">IMPEKABLE</a>
+  <div class="search-wrapper w-100 position-relative">
+  	<input class="form-control form-control-dark w-100" type="text" placeholder="Search transactions, invoices or help" aria-label="Search">
+  </div>
+  <ul class="navbar-nav px-3 bg-white">
+    <li class="nav-item text-nowrap">
+	      <a class="nav-link" href="#">
+	      	<img src="assets/images/icons/icon_help-center-1.svg" alt="">
+	      </a>
+    </li>
+    <li class="nav-item text-nowrap">
+		<div class="dropdown">
+	      		<a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      			<img src="assets/images/icons/Chat Icon.svg" alt="">
+	     	 	</a>
+	      		 <div class="dropdown-menu position-absolute dropdown-menu-right text-left f-13 f-regular dd-notification" aria-labelledby="dropdownMenuLink">
+			    	<div class="container">
+			    		<div class="pt-2 pb-1">
+							<h2 class="f-17">Notifications</h2>
+						</div>
+						<div class="dropdown-divider mt-0"></div>
+			    		<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/david-lee.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">David Lee</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/alex-johnson.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Alex Johnson</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/jonathan-chen.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Jonathan Chen</b> sent you a message.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/robert-grant.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">Robert Grant</b> sent you mail.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<a href="#" class="text-decoration-none">
+							<span class="dropdown-item f-13">
+								<div class="img-notification mr-3">
+									<img src="assets/images/david-james.svg" alt="">
+								</div>
+								<div class="text-notification">
+									<p><b class="f-bold">David James</b> sent you mail.</p>
+									<p class="text-muted">4 min ago.</p>
+								</div>
+							</span>
+						</a>
+						<div class="dropdown-divider"></div>
+						<div class=" f-13 text-center py-2">
+							<a href="inbox.html" class="text-decoration-none">View all notifications</a>
+						</div>
+					</div>
+				</div>
+			</div>
+    </li>	
+    <li class="nav-item text-nowrap">
+    	<div class="dropdown">
+	      <a class="nav-link" href="#"  role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+	      	<img src="assets/images/icons/icon_notification.svg" alt="">
+	      </a>
+	      <div class="dropdown-menu position-absolute dropdown-menu-right text-center pt-0 dd-inbox" aria-labelledby="dropdownMenuLink">
+					<div class="f-17 bg-white w-100 pt-3 pr-3 pl-3 pb-3">
+						<h4 class="f-17 f-regular m-0">Notifications</h3>
+					</div>
+					<div class="dropdown-divider m-0"></div>
+					<div class="text-left bg-light  f-13 f-regular ">
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">David Lee</b>
+								<p>Hey, I just read your message. How are you?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider  m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Jonathan Chen</b>
+								<p>Are you available later today to chat?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Jackie Berry</b>
+								<p>I will be unavailable until after 5pm today. </p>
+							</div>
+						</a>
+						<div class="dropdown-divider  m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Alex Johnson</b>
+								<p>How is your day?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+						<a href="#" class="text-decoration-none">
+							<div class="dropdown-item px-4 py-2">
+								<b class="f-bold">Maria Cooper</b>
+								<p>What are you doing this weekend?</p>
+							</div>
+						</a>
+						<div class="dropdown-divider m-0"></div>
+					</div>
+						<div class="bg-white w-100 py-2">
+							<a class="color-primary text-decoration-none f-12" href="#">See all</a>
+						</div>
+					
+			</div>
+	    </div>
+    </li>
+    <li class="nav-item text-nowrap">
+      <span class="v-line"></span>
+    </li>
+    <li class="text-nowrap user-name">
+		<div class="dropdown">
+	    	<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+		    	John Doe
+		    	<img src="assets/images/icons/icon_down-arrow-small.svg" alt="">
+		    </a>
+		    <div class="dropdown-menu position-absolute dropdown-menu-right text-center f-13 f-regular dd-account" aria-labelledby="dropdownMenuLink">
+		    	<div class="container">
+					<span class="dropdown-item f-13"><b class="f-bold">Status :</b> Online</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Account setting</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Feedback</span>
+					<div class="dropdown-divider"></div>
+					<span class="dropdown-item">Logout</span>
+				</div>
+			</div>
+		</div>
+    </li>
+    <li class="nav-item">
+		<a href="#" class="text-dark text-decoration-none" role="button" id="dropdownMenuLink" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+    		<img src="assets/images/avatar.svg" class="avatar" alt="">
+    	</a>
+    </li>
+  </ul>	
+</nav>
+
+<div class="container-fluid">
+  <div class="row">
+    <nav class="col-md-2 d-none d-md-block bg-darkblue sidebar position-fixed">
+      <div class="sidebar-sticky">
+       <ul class="nav flex-column">
+          
+          <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="index.html">
+              <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_home" transform="translate(-43 -91)">
+				    <path id="Path_357" data-name="Path 357" d="M15.581,5.186l-7-5a1,1,0,0,0-1.162,0l-7,5A1,1,0,0,0,1.581,6.814L2,6.515V15a1,1,0,0,0,1,1H13a1,1,0,0,0,1-1V6.515A1.7,1.7,0,0,0,15,7a1,1,0,0,0,.582-1.814ZM12,14H10V11a2,2,0,0,0-4,0v3H4V5.086L8,2.229l4,2.857Z" transform="translate(43 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Home
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="index.html">
+             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_dashboard" transform="translate(-79 -91)">
+				    <path id="Union_8" data-name="Union 8" d="M-481-8a.945.945,0,0,1-1-1v-9a.945.945,0,0,1,1-1h2a.945.945,0,0,1,1,1v9a.945.945,0,0,1-1,1Zm-6,0a.944.944,0,0,1-1-1V-23a.945.945,0,0,1,1-1h2a.945.945,0,0,1,1,1V-9a.944.944,0,0,1-1,1Zm-6,0a.945.945,0,0,1-1-1v-4a.945.945,0,0,1,1-1h2a.946.946,0,0,1,1,1v4a.945.945,0,0,1-1,1Z" transform="translate(573 115)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Dashboard
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="inbox.html">
+			<svg xmlns="http://www.w3.org/2000/svg" width="16" height="14" viewBox="0 0 16 14">
+			  <g id="icon_inbox" transform="translate(-115 -93)">
+			    <path id="Path_358" data-name="Path 358" d="M15,1H1A1,1,0,0,0,0,2V14a1,1,0,0,0,1,1H15a1,1,0,0,0,1-1V2A1,1,0,0,0,15,1ZM14,13H2V6.723L7.5,9.868a1,1,0,0,0,.992,0L14,6.723Zm0-8.58L8,7.849,2,4.42V3H14Z" transform="translate(115 92)" fill="#a5a4bf"/>
+			  </g>
+			</svg>
+              Inbox
+            </a>
+          </li>
+           <li class="nav-item active">
+            <a class="nav-link  text-light f-regular" href="products.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="15.999" height="15.999" viewBox="0 0 15.999 15.999">
+				  <g id="icon_products" transform="translate(-151 -91)">
+				    <path id="Union_9" data-name="Union 9" d="M11-203v-16h2v16Zm-14,0v-16h2v16Zm11-5v-11h2v11Zm-5,0v-11H7v11Zm-3,0v-11H2v11Z" transform="translate(154 310)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Products
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="invoices.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+				  <g id="icon_Invoices" transform="translate(-187 -91)">
+				    <path id="Path_102" data-name="Path 102" d="M14,0H2A.945.945,0,0,0,1,1V16l3-2,2,2,2-2,2,2,2-2,3,2V1A.945.945,0,0,0,14,0ZM12,10H4V8h8Zm0-4H4V4h8Z" transform="translate(186 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Invoices
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="customers.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="14" height="16" viewBox="0 0 14 16">
+				  <g id="icon_customers" transform="translate(-221 -91)">
+				    <path id="Union_10" data-name="Union 10" d="M-4-310a6.018,6.018,0,0,1,6-6H4a6.018,6.018,0,0,1,6,6Zm2.6-2H7.5A4.033,4.033,0,0,0,4-314H2.1A4.035,4.035,0,0,0-1.4-312Zm.4-9v-1a4.012,4.012,0,0,1,4-4,4.012,4.012,0,0,1,4,4v1a4.012,4.012,0,0,1-4,4A4.012,4.012,0,0,1-1-321Zm2-1v1a2.006,2.006,0,0,0,2,2,2.006,2.006,0,0,0,2-2v-1a2.006,2.006,0,0,0-2-2A2.006,2.006,0,0,0,1-322Z" transform="translate(225 417)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Customers
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="chat-room.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_chat-room" transform="translate(-255 -91)">
+				    <path id="Union_11" data-name="Union 11" d="M11-382H6l1.828-2H14a1,1,0,0,0,1-1v-6h1a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H14v3Zm-7-4H2a1,1,0,0,1-1-1v-7a1,1,0,0,1,1-1H12a1,1,0,0,1,1,1v7a1,1,0,0,1-1,1H7l-3,3Z" transform="translate(254 486)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Chat Room
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="calendar.html">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_calendar" transform="translate(-291 -91)">
+				    <rect id="Rectangle_557" data-name="Rectangle 557" width="16" height="16" transform="translate(291 91)" fill="none"/>
+				    <path id="Path_149" data-name="Path 149" d="M2,5v9H14V5ZM13,2h2a.945.945,0,0,1,1,1V15a.945.945,0,0,1-1,1H1a.945.945,0,0,1-1-1V3A.945.945,0,0,1,1,2H3V1A.945.945,0,0,1,4,0,.945.945,0,0,1,5,1V2h6V1a1,1,0,0,1,2,0ZM12,12H10V10h2ZM9,12H7V10H9Zm3-3H10V7h2ZM9,9H7V7H9ZM6,12H4V10H6Z" transform="translate(291 91)" fill="#a5a4bf" fill-rule="evenodd"/>
+				  </g>
+				</svg>
+              Calendar
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_help-center" transform="translate(-327 -91)">
+				    <path id="Path_107" data-name="Path 107" d="M8,0a8,8,0,1,0,8,8A8.024,8.024,0,0,0,8,0ZM8,10a2,2,0,1,1,2-2A2.006,2.006,0,0,1,8,10ZM8,2a5.834,5.834,0,0,1,2.6.6L9.044,4.156a3.591,3.591,0,0,0-2.089,0L5.4,2.6A5.834,5.834,0,0,1,8,2ZM2,8a5.834,5.834,0,0,1,.6-2.6L4.156,6.956a3.591,3.591,0,0,0,0,2.089L2.6,10.6A5.834,5.834,0,0,1,2,8Zm6,6a5.834,5.834,0,0,1-2.6-.6l1.556-1.556a3.591,3.591,0,0,0,2.089,0L10.6,13.4A5.834,5.834,0,0,1,8,14Zm5.4-3.4L11.844,9.044a3.591,3.591,0,0,0,0-2.089L13.4,5.4a5.933,5.933,0,0,1,0,5.2Z" transform="translate(327 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Help Center
+            </a>
+          </li>
+           <li class="nav-item">
+            <a class="nav-link  text-light f-regular" href="#">
+				<svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" viewBox="0 0 16 16">
+				  <g id="icon_setting" transform="translate(-363 -91)">
+				    <path id="Path_108" data-name="Path 108" d="M13.3,5.2l1.1-2.1L13,1.7,10.9,2.8a3.582,3.582,0,0,0-1.1-.4L9,0H7L6.2,2.3a4.179,4.179,0,0,0-1,.4L3.1,1.6,1.6,3.1,2.7,5.2a4.179,4.179,0,0,0-.4,1L0,7V9l2.3.8c.1.4.3.7.4,1.1L1.6,13,3,14.4l2.1-1.1a3.582,3.582,0,0,0,1.1.4L7,16H9l.8-2.3c.4-.1.7-.3,1.1-.4L13,14.4,14.4,13l-1.1-2.1a3.582,3.582,0,0,0,.4-1.1L16,9V7l-2.3-.8A4.179,4.179,0,0,0,13.3,5.2ZM8,11A2.946,2.946,0,0,1,5,8,2.946,2.946,0,0,1,8,5a2.946,2.946,0,0,1,3,3A2.946,2.946,0,0,1,8,11Z" transform="translate(363 91)" fill="#a5a4bf"/>
+				  </g>
+				</svg>
+              Settings
+            </a>
+          </li>
+        </ul>
+     </div>
+   </nav>
+ <!-- end nav-->
+	<div class="col-md-10 w-100 bg-darkwhite main f-regular mb-5">
+ 		<div class="container">
+ 			<h3 class="f-regular f-28 mb-4">Products</h3>
+					<div class="container-fluid">
+						<div class="row">
+							<div class="ml-0 mb-4 col-md-4 pl-0 pr-4">
+								<div class="triple-box-2 bg-white d-flex py-2 px-3  shadow-sm">
+									<div class="img-product">
+										<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+										  <g id="Icon" transform="translate(-235 -994)">
+										    <g id="Icon.BG" transform="translate(235 994)" fill="#fff">
+										      <path d="M 19 37.5 C 16.50230026245117 37.5 14.07956981658936 37.01092910766602 11.79911994934082 36.04637908935547 C 9.596209526062012 35.11463165283203 7.617690086364746 33.7806396484375 5.918519973754883 32.08147811889648 C 4.219359874725342 30.38231086730957 2.885370016098022 28.40378952026367 1.953619956970215 26.20088005065918 C 0.9890699982643127 23.92042922973633 0.5 21.49769973754883 0.5 19 C 0.5 16.50230026245117 0.9890699982643127 14.07956981658936 1.953619956970215 11.79911994934082 C 2.885370016098022 9.596209526062012 4.219359874725342 7.617690086364746 5.918519973754883 5.918519973754883 C 7.617690086364746 4.219359874725342 9.596209526062012 2.885370016098022 11.79911994934082 1.953619956970215 C 14.07956981658936 0.9890699982643127 16.50230026245117 0.5 19 0.5 C 21.49769973754883 0.5 23.92042922973633 0.9890699982643127 26.20088005065918 1.953619956970215 C 28.40378952026367 2.885370016098022 30.38231086730957 4.219359874725342 32.08147811889648 5.918519973754883 C 33.7806396484375 7.617690086364746 35.11463165283203 9.596209526062012 36.04637908935547 11.79911994934082 C 37.01092910766602 14.07956981658936 37.5 16.50230026245117 37.5 19 C 37.5 21.49769973754883 37.01092910766602 23.92042922973633 36.04637908935547 26.20088005065918 C 35.11463165283203 28.40378952026367 33.7806396484375 30.38231086730957 32.08147811889648 32.08147811889648 C 30.38231086730957 33.7806396484375 28.40378952026367 35.11463165283203 26.20088005065918 36.04637908935547 C 23.92042922973633 37.01092910766602 21.49769973754883 37.5 19 37.5 Z" stroke="none"/>
+										      <path d="M 19 1 C 14.19202995300293 1 9.671829223632813 2.872329711914063 6.272079467773438 6.272079467773438 C 2.872329711914063 9.671829223632813 1 14.19202995300293 1 19 C 1 23.80797004699707 2.872329711914063 28.32817077636719 6.272079467773438 31.72792053222656 C 9.671829223632813 35.12767028808594 14.19202995300293 37 19 37 C 23.80797004699707 37 28.32817077636719 35.12767028808594 31.72792053222656 31.72792053222656 C 35.12767028808594 28.32817077636719 37 23.80797004699707 37 19 C 37 14.19202995300293 35.12767028808594 9.671829223632813 31.72792053222656 6.272079467773438 C 28.32817077636719 2.872329711914063 23.80797004699707 1 19 1 M 19 0 C 29.49341011047363 0 38 8.506589889526367 38 19 C 38 29.49341011047363 29.49341011047363 38 19 38 C 8.506589889526367 38 0 29.49341011047363 0 19 C 0 8.506589889526367 8.506589889526367 0 19 0 Z" stroke="none" fill="#56d9fe"/>
+										    </g>
+										    <path id="money-bag-icon" d="M-227.408-1011a3.359,3.359,0,0,1-2.768-1.5,3.02,3.02,0,0,1,0-3l3.514-6a1.136,1.136,0,0,1,.958-.5h4.258a1.135,1.135,0,0,1,.958.5l3.514,6a3.013,3.013,0,0,1,0,3,3.359,3.359,0,0,1-2.768,1.5Zm1.7-13a1,1,0,0,1-.745-.3l-1.065-1a.975.975,0,0,1,.745-1.7h6.387a.993.993,0,0,1,.745,1.7l-1.065,1a1,1,0,0,1-.745.3Z" transform="translate(477.575 2032)" fill="#56d9fe"/>
+										  </g>
+										</svg>
+									</div>
+									<div class="text-product f-regular ml-2 mr-auto">
+										<h5 class="f-18 text-skyblue mb-0">$50,000</h5>
+										<p class="f-13 mb-0">Total Revenue</p>
+									</div>
+									<div class="three-dots justify-content-center">
+										<a href="#">
+											<img src="assets/images/icons/menu-icon.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ml-0 mb-4 col-md-4 pl-0 pr-4">
+								<div class="triple-box-2 bg-white d-flex py-2 px-3  shadow-sm">
+									<div class="img-product">
+										<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+										  <g id="Icon" transform="translate(-235 -994)">
+										    <g id="Icon.BG" transform="translate(235 994)" fill="#fff">
+										      <path d="M 19 37.5 C 16.50230026245117 37.5 14.07956981658936 37.01092910766602 11.79911994934082 36.04637908935547 C 9.596209526062012 35.11463165283203 7.617690086364746 33.7806396484375 5.918519973754883 32.08147811889648 C 4.219359874725342 30.38231086730957 2.885370016098022 28.40378952026367 1.953619956970215 26.20088005065918 C 0.9890699982643127 23.92042922973633 0.5 21.49769973754883 0.5 19 C 0.5 16.50230026245117 0.9890699982643127 14.07956981658936 1.953619956970215 11.79911994934082 C 2.885370016098022 9.596209526062012 4.219359874725342 7.617690086364746 5.918519973754883 5.918519973754883 C 7.617690086364746 4.219359874725342 9.596209526062012 2.885370016098022 11.79911994934082 1.953619956970215 C 14.07956981658936 0.9890699982643127 16.50230026245117 0.5 19 0.5 C 21.49769973754883 0.5 23.92042922973633 0.9890699982643127 26.20088005065918 1.953619956970215 C 28.40378952026367 2.885370016098022 30.38231086730957 4.219359874725342 32.08147811889648 5.918519973754883 C 33.7806396484375 7.617690086364746 35.11463165283203 9.596209526062012 36.04637908935547 11.79911994934082 C 37.01092910766602 14.07956981658936 37.5 16.50230026245117 37.5 19 C 37.5 21.49769973754883 37.01092910766602 23.92042922973633 36.04637908935547 26.20088005065918 C 35.11463165283203 28.40378952026367 33.7806396484375 30.38231086730957 32.08147811889648 32.08147811889648 C 30.38231086730957 33.7806396484375 28.40378952026367 35.11463165283203 26.20088005065918 36.04637908935547 C 23.92042922973633 37.01092910766602 21.49769973754883 37.5 19 37.5 Z" stroke="none"/>
+										      <path d="M 19 1 C 14.19202995300293 1 9.671829223632813 2.872329711914063 6.272079467773438 6.272079467773438 C 2.872329711914063 9.671829223632813 1 14.19202995300293 1 19 C 1 23.80797004699707 2.872329711914063 28.32817077636719 6.272079467773438 31.72792053222656 C 9.671829223632813 35.12767028808594 14.19202995300293 37 19 37 C 23.80797004699707 37 28.32817077636719 35.12767028808594 31.72792053222656 31.72792053222656 C 35.12767028808594 28.32817077636719 37 23.80797004699707 37 19 C 37 14.19202995300293 35.12767028808594 9.671829223632813 31.72792053222656 6.272079467773438 C 28.32817077636719 2.872329711914063 23.80797004699707 1 19 1 M 19 0 C 29.49341011047363 0 38 8.506589889526367 38 19 C 38 29.49341011047363 29.49341011047363 38 19 38 C 8.506589889526367 38 0 29.49341011047363 0 19 C 0 8.506589889526367 8.506589889526367 0 19 0 Z" stroke="none" fill="#a3a1fb"/>
+										    </g>
+										    <path id="cart-icon" d="M-615.986-1023a2,2,0,0,1,2-2,2,2,0,0,1,2,2,2,2,0,0,1-2,2A2,2,0,0,1-615.986-1023Zm-10,0a2,2,0,0,1,2-2,2,2,0,0,1,2,2,2,2,0,0,1-2,2A2,2,0,0,1-625.986-1023Zm-1.014-3v-2h12.261l1.427-5h-11.674v-2h-2v-2h3a1,1,0,0,1,1,1v1h11a1.021,1.021,0,0,1,.961,1.275l-2,7a1,1,0,0,1-.962.725Zm1-3v-1h4v1Zm1-2v-1h4v1Z" transform="translate(873 2042)" fill="#a4a1fb"/>
+										  </g>
+										</svg>
+
+									</div>
+									<div class="text-product f-regular ml-2 mr-auto">
+										<h5 class="f-18 text-purple mb-0">$50,000</h5>
+										<p class="f-13 mb-0">Revenue</p>
+									</div>
+									<div class="three-dots justify-content-center">
+										<a href="#">
+											<img src="assets/images/icons/menu-icon.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+							<div class="ml-0 mb-4 col-md-4 pl-0 pr-0">
+								<div class="triple-box-2 bg-white d-flex py-2 px-3 shadow-sm">
+									<div class="img-product">
+										<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+										  <g id="Icon" transform="translate(-235 -994)">
+										    <g id="Icon.BG" transform="translate(235 994)" fill="#fff" stroke="#4ad991" stroke-width="1">
+										      <circle cx="19" cy="19" r="19" stroke="none"/>
+										      <circle cx="19" cy="19" r="18.5" fill="none"/>
+										    </g>
+										    <path id="trend-up-icon" d="M9,6h3.6L9,9.6l-4-4L.3,10.3l1.4,1.4L5,8.4l4,4,5-5V11h2V4H9Z" transform="translate(245.7 1005)" fill="#4ad991"/>
+										  </g>
+										</svg>
+
+									</div>
+									<div class="text-product f-regular ml-2 mr-auto">
+										<h5 class="f-18 text-green mb-0">+2.0%</h5>
+										<p class="f-13 mb-0">Growth</p>
+									</div>
+									<div class="three-dots justify-content-center">
+										<a href="#">
+											<img src="assets/images/icons/menu-icon.svg" alt="">
+										</a>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-8 pl-0 pr-4 mb-4">
+								<div class="bg-white shadow-sm p-3 w-100">
+									<h4>Top Products</h4>
+									<table class="table f-13 f-regular mt-4">
+									  <thead class="thead-light text-uppercase f-bold text-black-50">
+									    <tr>
+									      <th scope="col">Product</th>
+									      <th scope="col">availability</th>
+									      <th scope="col">total</th>
+									    </tr>
+									  </thead>
+									  <tbody>
+									    <tr>
+									      <th scope="row">
+									      	<img src="assets/images/Product.img-1.svg" alt="">
+									      	<span class="f-regular f-13">Women’s Vintage Peacoat</span>
+									      </th>
+									      <td>
+									      	<span class="badge badge-pill badge-green f-11 f-bold py-2 text-muted px-3 mt-2">320 in stock</span>
+									      </td>
+									      <td class="pt-4">$29,192</td>
+									    </tr>
+									    <tr>
+									      <th scope="row">
+									      	<img src="assets/images/Product.img-2.svg" alt="">
+									      	<span class="f-regular f-13">Women’s Oatmeal Sweater</span>
+									      </th>
+									      <td>
+									      	<span class="badge badge-pill badge-red f-11 f-bold py-2 text-muted px-3 mt-2">Out of stock</span>
+									      </td>
+									      <td class="pt-4">$29,192</td>
+									    </tr>
+									    <tr>
+									      <th scope="row">
+									      	<img src="assets/images/Product.img-3.svg" alt="">
+									      	<span class="f-regular f-13">Women’s Denim Shirt</span>
+									      </th>
+									      <td>
+									      	<span class="badge badge-pill badge-orange f-11 f-bold py-2 text-muted px-4 mt-2">3 in stock</span>
+									      </td>
+									      <td class="pt-4">$29,192</td>
+									    </tr>
+									    <tr>
+									      <th scope="row">
+									      	<img src="assets/images/Product.img-4.svg" alt="">
+									      	<span class="f-regular f-13">Women’s Vintage Peacoat</span>
+									      </th>
+									      <td>
+									      	<span class="badge badge-pill badge-orange f-11 f-bold py-2 text-muted px-4 mt-2">3 in stock</span>
+									      </td>
+									      <td class="pt-4">$29,192</td>
+									    </tr>
+									     <tr>
+									    	<td colspan="5" class="" style="padding-bottom: 4px">
+									    		<div class="more w-100 text-center">
+													<a href="#" class="f-13 f-regular text-decoration-none">Show More</a>
+												</div>
+											</td>
+									    </tr>
+									  </tbody>
+									</table>
+								</div>
+							</div>
+							<div class="col-md-4 p-0">
+								<div class=" bg-white shadow-sm px-3 pt-2 pb-2 mb-4">
+									<ul class="list-group list-group-flush f-regular">
+									  <li class="list-group-item px-0"><h5 class="f-regular f-18">Quick Details</h5></li>
+									  <li class="list-group-item px-0 py-3">
+									  	<img src="assets/images/icons/icon_round-customer.svg" alt="">
+									  	<span class="ml-2 f-15 f-regular">290 New Customers</span>
+									  	<span class="text-muted f-regular f-13 right-middle float-right">Last 24 Hours</span>
+									  </li>
+									  <li class="list-group-item px-0 py-3">
+									  	<img src="assets/images/icons/icon_order.svg" alt="">
+									  	<span class="ml-2 f-15 f-regular">490 Orders</span>
+									  	<span class="text-muted f-regular f-13 right-middle float-right">Awaiting Process</span>
+									  </li>
+									  <li class="list-group-item px-0 py-3">
+									  	<img src="assets/images/icons/icon_timer.svg" alt="">
+									  	<span class="ml-2 f-15 f-regular">120 Orders</span>
+									  	<span class="text-muted f-regular f-13 right-middle float-right">On Hold</span>
+									  </li>
+									 <li class="list-group-item px-0 py-3">
+									  	<img src="assets/images/icons/icon_warning-round.svg" alt="">
+									  	<span class="ml-2 f-15 f-regular">490 Orders</span>
+									  	<span class="text-muted f-regular f-13 right-middle float-right">Low In Stock</span>
+									  </li>
+									  <li class="list-group-item px-0 py-3">
+									  	<img src="assets/images/icons/icon_forbid.svg" alt="">
+									  	<span class="ml-2 f-15 f-regular">42 Items</span>
+									  	<span class="text-muted f-regular f-13 right-middle float-right">Out of Stock</span>
+									  </li>
+									  <li class="list-group-item px-0"></li>
+									</ul>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="container">
+						<div class="row">
+							<div class="col-md-4 pl-0 pr-4">
+								<div class="bg-white p-3 shadow-sm" style="padding-bottom: 16px !important">
+									<h4 class="f-18 f-regular">Money Stats</h4>
+									<div class="clearfix"></div>
+									<div class="f-15">
+										<span>Total Budget</span>
+										<span class="text-green float-right">$50,000</span>
+									</div>
+									<div class="dropdown-divider mt-3"></div>
+									<div class="chart-container position-relative chart-wrapper-1">
+							    		<canvas id="chartDoughnut" class="mt-4" width="4vw" height="3vh"></canvas>
+							    		<div class="position-absolute text-center">
+											<h4>48%</h4>
+											<h4>Saved</h4>
+										</div>
+									</div>
+									<div class="clearfix"></div>
+									<div class="overflow-hidden">
+										<div class="float-left">
+											<div class="dots float-left"></div>
+											<div class="text-dots f-regular d-inline-block">
+												<p class="mb-0 f-15">Total Spent</p>
+												<p class="mb-0 text-muted f-13">$18,570</p>
+											</div>
+										</div>
+										<div class="float-right">
+											<div class="dots-purple float-left"></div>
+											<div class="text-dots f-regular d-inline-block">
+												<p class="mb-0 f-15">Money Saved</p>
+												<p class="mb-0 text-muted f-13">$31,430</p>
+											</div>
+										</div>
+									</div>
+									<div class="dropdown-divider"></div>
+									<div class="text-center">
+										<a href="#" class="text-decoration-none text-center f-regular f-13">View Full Report</a>
+									</div>
+								</div>
+							</div>
+							<div class="col-md-8 px-0">
+								<div class="bg-white p-3 shadow-sm">
+									<div class="overflow-hidden">
+										<div class="float-left">
+											<h4 class="mb-0 f-18 f-regular">Net Income</h4>
+											<h5 class="f-15 text-light-purple f-bold mb-0">Avg. $5,309</h5>
+										</div>
+										<div class="dropdown-wrapper">
+											<div class="dropdown border float-right rounded px-2 pb-1  ml-2">
+												<span class="f-13 f-regular">Monthly</span>
+												<img src="assets/images/icons/small-down.svg" alt="" class="ml-5">
+											</div>
+											<div class="dropdown border float-right rounded px-2 pb-1">
+												<span class="f-13 f-regular">Last Year</span>
+												<img src="assets/images/icons/small-down.svg" alt="" class="ml-5">
+											</div>
+										</div>
+										<div class="chart-container mt-3 px-0">
+							    			<canvas id="stackedBar1" class="mt-4 w-100" width="8vw" height="4vh"></canvas>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+					</div>
+ 		</div>
+ 	</div>
+</div>
+</div>
+
+	
+</body>
+<script src="assets/js/bootstrap.bundle.min.js"></script>
+<script src="assets/js/chart.js"></script>
+<script src="assets/js/app.js"></script>
+</html>

@@ -1,0 +1,9 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="38" height="38" viewBox="0 0 38 38">
+  <g id="Icon" transform="translate(-235 -994)">
+    <g id="Icon.BG" transform="translate(235 994)" fill="#fff" stroke="#4ad991" stroke-width="1">
+      <circle cx="19" cy="19" r="19" stroke="none"/>
+      <circle cx="19" cy="19" r="18.5" fill="none"/>
+    </g>
+    <path id="trend-up-icon" d="M9,6h3.6L9,9.6l-4-4L.3,10.3l1.4,1.4L5,8.4l4,4,5-5V11h2V4H9Z" transform="translate(245.7 1005)" fill="#4ad991"/>
+  </g>
+</svg>
