@@ -1,6 +1,52 @@
 @import "./header";
 @import "component";
 
-	.bg-left{
-		background: url("../images/bg-account.svg") !important;
+
+
+.bg-left{
+	background: url("../images/bg-account.svg") !important;
+	background-size: cover;
+	background-repeat: no-repeat;
+	background-position: 0% !important; 
+}
+
+.data-wrapper{
+
+	h4{
+		letter-spacing: 5px !important;
+		color: var(--dark-blue);
 	}
+
+	input{
+		border: none;
+		border-radius: 0 !important;
+		transition: .3s ease;
+
+		&:focus{
+			border-bottom:1px solid #000 !important;
+		transition: .3s ease;
+
+		}
+	}
+	
+	a{
+		color: var(--dark-blue) !important;
+	}
+
+	.btn{
+		color: #fff !important;
+	}
+
+	.button-submit{
+
+		a{
+			padding-right: 70px !important;
+			padding-left: 70px !important;
+
+			&:nth-child(2){
+				border:1px solid var(--dark-blue); 
+				color: var(--dark-blue) !important;
+			}
+		}
+	}
+}

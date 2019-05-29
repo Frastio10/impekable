@@ -13,6 +13,7 @@ mix.sass('resources/sass/style.scss', 'dist/assets/css')
    .sass('resources/sass/customers.scss', 'dist/assets/css')
    .sass('resources/sass/chat-room.scss', 'dist/assets/css')
    .sass('resources/sass/login.scss', 'dist/assets/css')
+   .sass('resources/sass/inbox.scss', 'dist/assets/css')
    .options({
     processCssUrls: false, 
     postCss: [

@@ -148,5 +148,3 @@ const stackedBar1 = ()=>{
 
 stackedBarElem = stackedBar1();
 // end chart js
-
-//calendar

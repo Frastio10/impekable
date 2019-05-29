@@ -1,0 +1,52 @@
+@import "./header";
+@import "component";
+
+.search-message{
+	@include padding-y(16.5px);
+}
+
+.nav-tabs{
+
+
+	.list-img{
+
+		img{
+			width: 40px;
+		}
+	}
+}
+
+.display-flex{
+	display: -webkit-flex;
+	display: -moz-flex;
+	display: -ms-flex;
+	display: -o-flex;
+	display: flex;
+}
+
+.group-message{
+	max-height: 500px;
+}
+
+.message-list.active{
+	background: #F5F6FA;
+}
+
+.message-list.border-important{
+	border-left:3px solid #FF6565;
+}
+
+.message-list.border-light-purple{
+	border-left:3px solid var(--light-purple);
+}
+
+.message-list.border-marketing{
+	border-left:3px solid var(--blue);
+}
+
+.sender-img{
+
+	img{
+		width: 40px;
+	}
+}

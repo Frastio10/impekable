@@ -6,5 +6,6 @@
     "/dist/assets/css/products.css": "/dist/assets/css/products.css",
     "/dist/assets/css/customers.css": "/dist/assets/css/customers.css",
     "/dist/assets/css/chat-room.css": "/dist/assets/css/chat-room.css",
-    "/dist/assets/css/login.css": "/dist/assets/css/login.css"
+    "/dist/assets/css/login.css": "/dist/assets/css/login.css",
+    "/dist/assets/css/inbox.css": "/dist/assets/css/inbox.css"
 }

@@ -34,6 +34,24 @@
 
 //end root
 
+//change bootstrap
+textarea:focus, 
+textarea.form-control:focus, 
+input.form-control:focus, 
+input[type=text]:focus, 
+input[type=password]:focus, 
+input[type=email]:focus, 
+input[type=number]:focus, 
+[type=text].form-control:focus, 
+[type=password].form-control:focus, 
+[type=email].form-control:focus, 
+[type=tel].form-control:focus, 
+[contenteditable].form-control:focus {
+  box-shadow: none !important;
+}
+
+//end
+
 //font style
 @for $i from 10 through 40 {
   .f-#{$i} {
@@ -61,6 +79,10 @@
 	color: var(--skyblue);
 }
 
+.text-darkblue{
+	color: var(--dark-blue);
+}
+
 .f-bold{
 	font-family: SourceSansPro-Bold;
 }
@@ -72,6 +94,10 @@
 
 
 //style
+.underlined{
+	text-decoration: underline;
+}
+
 .justify-content-center{
 	display: -webkit-flex;
 	display: -moz-flex;
@@ -114,6 +140,10 @@
 	background: #e6e6e6;	
 }
 
+.full-height{
+	height: 100vh;	
+}
+
 .bg-lighten-grey{
 	background: var(--lighten-grey) !important;
 }
@@ -126,8 +156,12 @@
 	background: var(--dark-blue-a) !important;
 }
 
-.bg-puprle{
-	background: var(--lightpurple) !important;
+.bg-purple{
+	background: var(--purple) !important;
+}
+
+.bg-light-purple{
+	background: var(--light-purple) !important;
 }
 
 .bg-darkblue{
@@ -194,7 +228,7 @@
 		input[type="text"]{
 			border: none !important;
 			outline: none !important;
-			@include padding-x(50px);
+			@include padding-x(60px);
 		}
 
 		&:before{
@@ -204,7 +238,7 @@
 			width: 16px;
 			height: 16px;
 			left: 30px;
-			top: 12px;
+			top: 11px;
 		}
 	}
 
@@ -255,9 +289,10 @@
 
 .sidebar-sticky{
 	margin-top: 40px;
+	height: 100vh;
 
 	.nav-item{
-		@include padding-y(12.7px);
+		@include padding-y(6.5px);
 		padding-left: 20px;
 
 

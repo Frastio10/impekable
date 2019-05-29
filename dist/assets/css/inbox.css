@@ -604,101 +604,45 @@ input[type=number]:focus,
   right: -10px !important;
 }
 
-.user-img {
-  position: relative;
+.search-message {
+  padding-top: 16.5px;
+  padding-bottom: 16.5px;
 }
 
-.user-img img {
+.nav-tabs .list-img img {
   width: 40px;
 }
 
-.user-img:after {
-  right: 0;
-  bottom: 1px;
-  position: absolute;
-  content: '';
-  width: 10px;
-  display: block;
-  border-radius: 100%;
-  height: 10px;
-  background: #5EE2A0;
+.display-flex {
+  display: -moz-flex;
+  display: -ms-flex;
+  display: -o-flex;
+  display: -ms-flexbox;
+  display: -webkit-box;
+  display: -webkit-flex;
+  display: flex;
 }
 
-.message-list .list-img img {
-  width: 45px;
+.group-message {
+  max-height: 500px;
 }
 
-.main {
-  overflow: hidden !important;
-}
-
-.search-message {
-  padding-top: 7px;
-  padding-bottom: 7px;
-}
-
-.message-wrapper {
-  max-height: 720px !important;
-}
-
-.message-wrapper .group-message {
-  overflow-y: visible;
-  max-height: 528px;
-}
-
-.message-wrapper .group-message .message-list {
-  cursor: pointer;
-}
-
-.message-wrapper .group-message .message-list.active {
+.message-list.active {
   background: #F5F6FA;
 }
 
-.message-wrapper .chat-text {
-  background: var(--lighten-grey);
-  max-width: calc(100% - 200px);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-right-radius: 20px;
+.message-list.border-important {
+  border-left: 3px solid #FF6565;
 }
 
-.message-wrapper .chat-text span {
-  word-break: break-all;
-  max-width: 100%;
+.message-list.border-light-purple {
+  border-left: 3px solid var(--light-purple);
 }
 
-.message-wrapper .chat-text-reply {
-  background: var(--primary);
-  color: #fff;
-  max-width: calc(100% - 200px);
-  padding-top: 8px;
-  padding-bottom: 8px;
-  padding-left: 12px;
-  padding-right: 12px;
-  border-top-left-radius: 20px;
-  border-top-right-radius: 20px;
-  border-bottom-left-radius: 20px;
+.message-list.border-marketing {
+  border-left: 3px solid var(--blue);
 }
 
-.message-wrapper .chat-text-reply span {
-  word-break: break-all;
-  max-width: 100%;
-}
-
-.message-wrapper .chat-list.reply .time {
-  float: right;
-}
-
-.message-wrapper .chat-list p {
-  margin-bottom: 0px;
-}
-
-.message-wrapper .message-all, .message-wrapper .message-alls {
-  max-height: 400px;
-  min-height: 400px;
-  overflow-y: auto;
+.sender-img img {
+  width: 40px;
 }
