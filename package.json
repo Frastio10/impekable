@@ -21,7 +21,7 @@
   "author": "Flips-Flops team",
   "license": "ISC",
   "dependencies": {
-    "ajv": "^6.9.2",
+    "ajv": "^6.12.3",
     "command-line-args": "^4.0.7",
     "cross-env": "^5.2.0",
     "dotenv": "^6.2.0",
