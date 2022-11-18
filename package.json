@@ -34,7 +34,7 @@
     "imagemin": "^6.1.0",
     "laravel-mix": "^2.1.14",
     "live-server": "^1.2.0",
-    "loader-utils": "^1.1.0",
+    "loader-utils": "^1.4.2",
     "node-sass": "^4.9.3",
     "node-watch": "^0.5.5",
     "path": "^0.12.7",
